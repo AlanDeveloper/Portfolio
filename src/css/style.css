@@ -25,6 +25,8 @@ div.card  {
 }
 
 div.card img {
+    max-width: 250px;
+    max-height: 350px;
     border-radius: 50%;
     /* height: 400px; */
 }
@@ -32,4 +34,14 @@ div.card img {
 div.bg-light {
     /* width: 70%; */
     padding: 40px;
+}
+
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+@media (max-width: 990px) {
+    nav, main {
+        width: 80%;
+    }
 }
