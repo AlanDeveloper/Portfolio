@@ -20,6 +20,10 @@ div.bg-light {
     padding: 40px;
 }
 
+div.bg-light p {
+    text-align: justify;
+}
+
 button.navbar-toggler:focus {
     outline: none;
 }
@@ -61,5 +65,9 @@ p.sec {
 
     .no-gutters {
         margin: auto;
+    }
+
+    div.card-body {
+        padding: 1.25rem 0px;
     }
 }
