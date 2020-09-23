@@ -1,3 +1,20 @@
+/* ROOT */
+
+.justify {
+    text-align: justify;
+}
+
+.tools {
+    background-color: #6c757d;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------ */
 nav {
     margin: auto;
     width: 70%;
@@ -44,6 +61,24 @@ p.sec {
 div.card button.btn-secondary {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+
+div.modal {
+    padding-left: 15px;
+}
+
+div.modal-dialog {
+    max-width: 900px;
+}
+
+div.modal-footer {
+    padding: 2rem;
+    justify-content: inherit;
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    background-color: #343a40;
+    height: 40px;
 }
 
 footer {
