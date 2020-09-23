@@ -20,7 +20,15 @@ div.bg-light {
     padding: 40px;
 }
 
-div.bg-light p {
+div.ling {
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+div.bg-light p, p.card-text {
     text-align: justify;
 }
 
@@ -30,6 +38,16 @@ button.navbar-toggler:focus {
 
 p.sec {
     font-size: 18px;
+}
+
+div.card button.btn-secondary {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+footer {
+    color: white;
+    text-align: center;
 }
 
 @media (max-width: 990px) {
@@ -50,7 +68,7 @@ p.sec {
 
 @media (max-width: 770px) {
     img.img-thumbnail {
-        max-height: 600px;
+        max-height: 400px;
     }
 
     .col-md-3 {
@@ -59,15 +77,15 @@ p.sec {
         justify-content: center;
     }
 
-    .col-md-8 {
+    /* .col-md-8 {
         text-align: center;
-    }
+    } */
 
     .no-gutters {
         margin: auto;
     }
 
-    div.card-body {
+    /* div.card-body {
         padding: 1.25rem 0px;
-    }
+    } */
 }

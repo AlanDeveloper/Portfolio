@@ -2,8 +2,8 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr;
-    grid-template-areas: 'header' 'main';
+    grid-template-rows: auto 1fr 200px;
+    grid-template-areas: 'header' 'main' 'footer';
 }
 
 header {
@@ -12,4 +12,8 @@ header {
 
 main {
     grid-area: 'main';
+}
+
+footer {
+    grid-area: 'footer';
 }
