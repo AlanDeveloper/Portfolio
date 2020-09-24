@@ -1,0 +1,20 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "name": "BookPoint",
+            "image": "src/img/bookpoint.png",
+            "description": "Um projeto de livraria online, para encerramento do 3° ano no IFRS.",
+            "description_large": "Um projeto de livraria online para encerramento do 3 ano no IFRS, foi remodelado em 2020 sem o uso de qualquer framework.",
+            "linguagens": [ "PHP", "PostgresSQL"]
+        },
+        {
+            "id": 1,
+            "name": "Toka",
+            "image": "src/img/bookpoint.png",
+            "description": "Um projeto de livraria online, para encerramento do 3° ano no IFRS.",
+            "description_large": "Um projeto de livraria online para encerramento do 3 ano no IFRS, foi remodelado em 2020 sem o uso de qualquer framework.",
+            "linguagens": [ "JavaScript", "React", "MySQL"]
+        }
+    ]
+}
