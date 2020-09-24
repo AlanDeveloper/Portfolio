@@ -65,6 +65,7 @@ div.card button.btn-secondary {
 
 div.modal {
     padding-left: 15px;
+    padding-right: 15px !important;
 }
 
 div.modal-dialog {
@@ -82,9 +83,11 @@ span.carousel-control-next-icon, span.carousel-control-prev-icon {
 }
 
 footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     text-align: center;
-    margin-bottom: 0px;
     font-size: 1rem;
 }
 
