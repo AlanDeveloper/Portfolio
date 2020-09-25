@@ -3,18 +3,34 @@
         {
             "id": 0,
             "name": "BookPoint",
-            "image": "src/img/bookpoint.png",
+            "images": [
+                "src/img/bk_home.png",
+                "src/img/bk_home(1).png",
+                "src/img/bk_more.png",
+                "src/img/bk_support.png",
+                "src/img/bk_login.png",
+                "src/img/bk_adm.png"
+            ],
             "description": "Um projeto de livraria online, para encerramento do 3° ano no IFRS.",
             "description_large": "Um projeto de livraria online para encerramento do 3 ano no IFRS, foi remodelado em 2020 sem o uso de qualquer framework.",
-            "linguagens": [ "PHP", "PostgresSQL"]
+            "linguagens": [ "PHP", "PostgresSQL", "Bootstrap"],
+            "link": "https://github.com/AlanDeveloper/Book-Point"
         },
         {
             "id": 1,
             "name": "Toka",
-            "image": "src/img/bookpoint.png",
+            "images": [
+                "src/img/bk_home.png",
+                "src/img/bk_home(1).png",
+                "src/img/bk_more.png",
+                "src/img/bk_support.png",
+                "src/img/bk_login.png",
+                "src/img/bk_adm.png"
+            ],
             "description": "Um projeto de livraria online, para encerramento do 3° ano no IFRS.",
             "description_large": "Um projeto de livraria online para encerramento do 3 ano no IFRS, foi remodelado em 2020 sem o uso de qualquer framework.",
-            "linguagens": [ "JavaScript", "React", "MySQL"]
+            "linguagens": [ "JavaScript", "React"],
+            "link": "https://github.com/AlanDeveloper/Toka"
         }
     ]
 }
