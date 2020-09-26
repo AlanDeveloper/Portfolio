@@ -15,15 +15,20 @@
 }
 
 /* ------------------------------------------ */
-nav {
+/* NAVBAR */
+
+nav.navbar {
     margin: auto;
     width: 70%;
-    min-height: 90px;
+    min-height: 80px;
 }
 
 .navbar-collapse {
     justify-content: flex-end;
 }
+
+/* ------------------------------------------ */
+/* MAIN */
 
 main {
     /* display: flex; */
@@ -32,30 +37,17 @@ main {
     margin: auto;
 }
 
+p.sec {
+    font-size: 1.25rem;
+}
+
 div.bg-light {
     /* width: 70%; */
     padding: 40px;
 }
 
-div.ling {
-    color: #fff;
-    padding: 15px;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    font-size: 1rem;
-}
-
-div.bg-light p, p.card-text {
-    text-align: justify;
-}
-
 button.navbar-toggler:focus {
     outline: none;
-}
-
-p.sec {
-    font-size: 1.25rem;
 }
 
 div.card button.btn-secondary {
@@ -63,13 +55,25 @@ div.card button.btn-secondary {
     border-top-right-radius: 0px;
 }
 
+div ul {
+    /* padding: 0px 20px; */
+    list-style-type: square;
+}
+
+div ul li {
+    padding: 10px;
+}
+
+/* ------------------------------------------ */
+/* MODAL */
+
 div.modal {
     padding-left: 15px;
     padding-right: 15px !important;
 }
 
 div.modal-dialog {
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 div.modal-footer {
@@ -81,6 +85,26 @@ span.carousel-control-next-icon, span.carousel-control-prev-icon {
     background-color: #343a40;
     height: 40px;
 }
+/* ------------------------------------------ */
+/* ICONS */
+
+div.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+div.icons a {
+    color: #6c757d;
+    padding: 40px 20px;
+}
+
+div.icons a:hover {
+    color: #494f54;
+}
+
+/* ------------------------------------------ */
+/* FOOTER */
 
 footer {
     display: flex;
@@ -91,8 +115,10 @@ footer {
     font-size: 1rem;
 }
 
+/* ------------------------------------------ */
+
 @media (max-width: 990px) {
-    nav, main {
+    nav.navbar, main {
         width: 80%;
     }
 }
@@ -109,7 +135,7 @@ footer {
 
 @media (max-width: 770px) {
     img.img-thumbnail {
-        max-height: 400px;
+        display: none;
     }
 
     .col-md-3 {
