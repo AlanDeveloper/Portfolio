@@ -105,8 +105,8 @@
             <p class="card-text"><i class="fas fa-phone-alt mr-2"></i>(53) 99123-6244</p>
             <div class="icons">
                 <a href="https://www.facebook.com/alan.ssantos.32/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a href="https://twitter.com/_Alan__Santos_" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                <a href="https://www.instagram.com/alan_santos_32/?hl=pt-br" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/alan-santos-20659a190" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/AlanDeveloper" target="_blank"><i class="fab fa-github fa-2x"></i></a>
             </div>
         </div>
     </main>
@@ -130,6 +130,19 @@
         crossorigin="anonymous"></script>
     <script src="src/fontawesome/js/all.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script>
+        let div;
+        if(window.innerWidth <= 1000) {
+            div = document.querySelector('.row-cols-md-3');
+            div.classList.remove('row-cols-md-3');
+            div.classList.add('row-cols-md-2');
+
+        } else {
+            div = document.querySelector('.row-cols-md-2');
+            div.classList.remove('row-cols-md-2');
+            div.classList.add('row-cols-md-3');
+        }
+    </script>
     <script src="src/js/database.js"></script>
     <script>
         $('.nav a[href^="#"]').on('click', function (e) {
