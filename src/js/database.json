@@ -24,7 +24,10 @@
                 "src/img/tk_home.png",
                 "src/img/tk_home(1).png",
                 "src/img/tk_films.png",
-                "src/img/tk_series.png"
+                "src/img/tk_series.png",
+                "src/img/tk_login.png",
+                "src/img/tk_watch.png",
+                "src/img/tk_watch(1).png"
             ],
             "description": "Site no estilo da netflix de séries e filmes feito em React Native.",
             "description_large": "Esse é um projeto ao qual quis testar meus conhecimentos sobre React que, após fazer um curso na Udemy, achei que já era capaz e assim criei um design todo sem utilizar banco de dados.",
