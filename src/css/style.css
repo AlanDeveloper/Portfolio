@@ -1,11 +1,15 @@
 /* ROOT */
 
+:root {
+    --color: #6c757d;
+}
+
 .justify {
     text-align: justify;
 }
 
 .tools {
-    background-color: #6c757d;
+    background-color: var(--color);
     color: #fff;
     padding: 15px;
     border-radius: 5px;
@@ -16,6 +20,10 @@
 
 /* ------------------------------------------ */
 /* NAVBAR */
+
+header {
+    background-color: #2f3337;
+}
 
 nav.navbar {
     margin: auto;
@@ -37,6 +45,30 @@ main {
     margin: auto;
 }
 
+.img-thumbnail {
+    max-height: 500px;
+}
+
+div.h {
+    display: flex;
+}
+
+div.hability {
+    color: white;
+    background-color: #1f3347;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 10px;
+    margin-left: 0px;
+}
+
+div.hability p {
+    margin: 0px;
+}
+
 p.sec {
     font-size: 1.25rem;
 }
@@ -50,9 +82,17 @@ button.navbar-toggler:focus {
     outline: none;
 }
 
-div.card button.btn-secondary {
+div.card button.btn-project {
+    box-shadow: none;
+    color: white;
+    background-color: var(--color);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+}
+
+div.card button.btn-project:hover {
+    transition: .2s all;
+    background-color: #464c52;
 }
 
 div.card img {
@@ -99,7 +139,7 @@ div.icons {
 }
 
 div.icons a {
-    color: #6c757d;
+    color: var(--color);
     padding: 40px 20px;
 }
 
@@ -117,6 +157,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 1rem;
+    background-color: var(--color);
 }
 
 /* ------------------------------------------ */
@@ -141,22 +182,38 @@ footer {
     img.img-thumbnail {
         display: none;
     }
-
+    
     .col-md-3 {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
+    
     /* .col-md-8 {
         text-align: center;
     } */
-
+    
     .no-gutters {
         margin: auto;
     }
-
+    
     /* div.card-body {
         padding: 1.25rem 0px;
     } */
+}
+@media (max-width: 500px) {
+    .tools {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .hability {
+        flex-grow: 1;
+        margin: 10px;
+    }
+    div.h {
+        flex-grow: 1;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }

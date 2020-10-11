@@ -10,7 +10,7 @@ $.getJSON("src/js/database.json", function (data) {
         response += '<h5 class="card-title">'+ projects[i].name +'</h5>';
         response += '<p class="card-text">'+ projects[i].description +'</p>';
         response += '</div>';
-        response += '<button type="button" class="btn btn-secondary mt-4 p-3" id="modal_' + projects[i].id + '" onClick="modal('+ projects[i].id +')" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Ver mais</button>';
+        response += '<button type="button" class="btn btn-project mt-4 p-3" id="modal_' + projects[i].id + '" onClick="modal('+ projects[i].id +')" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Ver mais</button>';
         response += '</div>';
         response += '</div>';
     }
