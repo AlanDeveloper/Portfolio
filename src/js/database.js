@@ -2,7 +2,7 @@ $.getJSON("src/js/database.json", function (data) {
     let projects = data.projects;
     let response = '';
     
-    for (i = 0; i < projects.length; i++) {
+    for (let i = 0; i < projects.length; i++) {
         response += '<div class="col mb-4">';
         response += '<div class="card">';
         response += '<img src='+ projects[i].images[0] +' class="card-img-top">';
@@ -15,7 +15,22 @@ $.getJSON("src/js/database.json", function (data) {
         response += '</div>';
     }
 
-    document.getElementById('cards').innerHTML = response;
+    document.querySelector('#cards').innerHTML = response;
+});
+
+$.getJSON("src/js/database.json", function (data) {
+    let skills = data.skills;
+    let response = '';
+
+    for (let i = 0; i < skills.length; i++) {
+        response += '<div class="bg-light">';
+        response += '<div class="row">';
+        response += '<img src="' + skills[i].src + '" alt="' + skills[i].name.toLowerCase() + '">';
+        response += '<p>' + skills[i].name  + '</p>';
+        response += '</div></div>';        
+    }
+    
+    document.querySelector('.skills').innerHTML = response;
 });
 
 

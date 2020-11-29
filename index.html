@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="src/css/grid.css">
     <link rel="stylesheet" href="src/css/style.css">
     <link rel="stylesheet" href="src/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Portfólio</title>
@@ -19,7 +20,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
+                <div class="navbar-nav link">
                     <a class="nav-link p-3 active" href="#">Início<span class="sr-only">(current)</span></a>
                     <a class="nav-link p-3" href="#about">Sobre mim</a>
                     <a class="nav-link p-3" href="#projects">Meus projetos</a>
@@ -29,7 +30,7 @@
         </nav>
     </header>
     <main>
-        <div class="mt-5">
+        <div class="mt-4">
             <div class="row no-gutters">
                 <div class="col-md-3">
                     <img src="src/img/image.jpeg" class="img-thumbnail" alt="image">
@@ -61,51 +62,22 @@
                 </div>
             </div>
         </div>
-        <div class="bg-light mt-5 justify" id="about">
+        <div class="bg-light mt-4 justify p-4">
             <h4 class="mb-4">Sobre mim</h4>
             <p>Sou uma pessoa fascinada em aprender e vivenciar novas oportunidades, me formei no IFRS Campus Rio Grande ao qual tive 4 anos de desenvolvimento web(front-end e back-end) e agora estou cursando graduação em engenharia de computação.
             <br>Possuo uma grande bagagem em PHP e Python, assim como em seus frameworks(CodeIgniter, Laravel, Flask), complementados com PostgresSql e MySql montei alguns sistemas avaliados durante meu ensino.
             Não montei um sistema completo com JavaScript mas possuo conhecimentos com a linguagem de Jquery, Ajax, React e Vue. Sempre procurei aprender mais sobre a área de programação, 
             o que me levou a cursos na Udemy, palestras em faculdades e até me incentivei a palestrar. Assim, tive contato com o desenvolvimento mobile e desenvolvimento de jogos.</p>
         </div>
-        <div class="skills">
-            <div class="bg-light">
-                <div class="row">
-                    <img src="src/img/skills/php.png" alt="php">
-                    <p>PHP</p>
-                </div>
-            </div>
-            <div class="bg-light">
-                <div class="row">
-                    <img src="src/img/skills/python.png" alt="python">
-                    <p>Python</p>
-                </div>
-            </div>
-            <div class="bg-light">
-                <div class="row">
-                    <img src="src/img/skills/javascript.png" alt="javascript">
-                    <p>JavaScript</p>
-                </div>
-            </div>
-            <div class="bg-light">
-                <div class="row">
-                    <img src="src/img/skills/java.png" alt="java">
-                    <p>Java</p>
-                </div>
-            </div>
-            <div class="bg-light">
-                <div class="row">
-                    <img src="src/img/skills/css.png" alt="css">
-                    <p>CSS</p>
-                </div>
-            </div>
-        </div>
+        <div class="skills"></div>
         <div id="projects">
-            <div class="mt-5">
-                <h4 class="pb-3">Meus Projetos</h4>
-                <hr>
+            <div class="title mt-5">
+                <h4>Meus Projetos</h4>
+                <div>
+                    <hr><p>/ /</p><hr>
+                </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 mt-5" id="cards"></div>
+            <div class="row row-cols-1 row-cols-md-3 mt-3" id="cards"></div>
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -133,22 +105,29 @@
             </div>
             <hr>
         </div>
-        <div class="mt-5" id="contact">
-            <h4 class="pb-4">Contato</h4>
-            <p>Fique a vontade caso queira entrar em contato!</p>
-            <p class="card-text"><i class="fas fa-home mr-2"></i>Rio Grande(RS)</p>
-            <p class="card-text"><i class="fas fa-envelope mr-2"></i>alanssantos32@gmail.com</p>
-            <p class="card-text"><i class="fas fa-phone-alt mr-2"></i>(53) 99123-6244</p>
-            <div class="icons">
-                <a href="https://www.facebook.com/alan.ssantos.32/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/alan-santos-20659a190" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://github.com/AlanDeveloper" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+        <div id="contact">
+            <div class="title mt-5">
+                <h4>Contato</h4>
+                <div>
+                    <hr><p>/ /</p><hr>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p>Fique a vontade caso queira entrar em contato!</p>
+                <p class="card-text"><i class="fas fa-home mr-2"></i>Rio Grande(RS)</p>
+                <p class="card-text"><i class="fas fa-envelope mr-2"></i>alanssantos32@gmail.com</p>
+                <p class="card-text"><i class="fas fa-phone-alt mr-2"></i>(53) 99123-6244</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/alan.ssantos.32/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/alan-santos-20659a190" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/AlanDeveloper" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                </div>
             </div>
         </div>
     </main>
 
     <footer class="mt-5">
-            <div class="p-4">
+            <div class="p-4 link">
                 <p>©2020 AlanDeveloper</p>
                 <a href="#top">Voltar ao topo</a>
             </div>

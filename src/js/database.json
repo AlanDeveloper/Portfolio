@@ -1,4 +1,31 @@
 {
+    "skills": [
+        {
+            "id": 0,
+            "name": "PHP",
+            "src": "src/img/skills/php.png"
+        },
+        {
+            "id": 1,
+            "name": "Python",
+            "src": "src/img/skills/python.png"
+        },
+        {
+            "id": 2,
+            "name": "JavaScript",
+            "src": "src/img/skills/javascript.png"
+        },
+        {
+            "id": 3,
+            "name": "Java",
+            "src": "src/img/skills/java.png"
+        },
+        {
+            "id": 5,
+            "name": "CSS",
+            "src": "src/img/skills/css.png"
+        }
+    ],
     "projects": [
         {
             "id": 0,

@@ -4,6 +4,13 @@
     --color: #6c757d;
 }
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito';
+}
+
 .justify {
     text-align: justify;
 }
@@ -16,6 +23,22 @@
     margin-right: 5px;
     margin-bottom: 5px;
     font-size: 1rem;
+}
+
+.title div {
+    display: flex;
+    align-items: center;
+}
+
+.title div p {
+    margin: 0px;
+    color: var(--color);
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.title div hr {
+    flex: 1;
 }
 
 /* ------------------------------------------ */
@@ -76,11 +99,6 @@ div.hability p {
 
 p.sec {
     font-size: 1.25rem;
-}
-
-div.bg-light {
-    /* width: 70%; */
-    padding: 40px;
 }
 
 button.navbar-toggler:focus {
@@ -194,17 +212,11 @@ footer {
     }
 }
 
-/* @media (min-width: 770px) {
-    img.img-thumbnail {
-        min-width: 180px;
-    }
-
-    .col-md-8 {
-        margin-left: 40px;
-    }
-} */
-
 @media (max-width: 770px) {
+    nav.navbar, main {
+        width: 85%;
+    }
+
     img.img-thumbnail {
         display: none;
     }
@@ -215,17 +227,9 @@ footer {
         justify-content: center;
     }
     
-    /* .col-md-8 {
-        text-align: center;
-    } */
-    
     .no-gutters {
         margin: auto;
     }
-    
-    /* div.card-body {
-        padding: 1.25rem 0px;
-    } */
 }
 @media (max-width: 500px) {
     .tools {
