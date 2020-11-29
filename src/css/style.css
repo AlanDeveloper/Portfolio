@@ -2,6 +2,8 @@
 
 :root {
     --color: #6c757d;
+    --color-blue: #1f3347;
+    --color-header: #2f3337;
 }
 
 * {
@@ -9,10 +11,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito';
-}
-
-.justify {
-    text-align: justify;
 }
 
 .tools {
@@ -45,7 +43,7 @@
 /* NAVBAR */
 
 header {
-    background-color: #2f3337;
+    background-color: var(--color-header);
 }
 
 nav.navbar {
@@ -56,6 +54,10 @@ nav.navbar {
 
 .navbar-collapse {
     justify-content: flex-end;
+}
+
+.navbar h4 {
+    margin: 0px;
 }
 
 /* ------------------------------------------ */
@@ -79,6 +81,7 @@ div.h {
 div.hability {
     color: white;
     background-color: #1f3347;
+    /* background-color: #800000; */
     width: 150px;
     height: 120px;
     padding: 10px;
@@ -111,11 +114,13 @@ div.card button.btn-project {
     background-color: var(--color);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    /* background-color: #800000; */
 }
 
 div.card button.btn-project:hover {
     transition: .2s all;
     background-color: #464c52;
+    /* background-color: #800000; */
 }
 
 div.card img {
@@ -183,12 +188,12 @@ div.icons {
 }
 
 div.icons a {
-    color: var(--color);
-    padding: 40px 20px;
+    color: var(--color-blue);
+    margin: 40px 20px;
 }
 
 div.icons a:hover {
-    color: #494f54;
+    opacity: .8;
 }
 
 /* ------------------------------------------ */
@@ -202,6 +207,11 @@ footer {
     text-align: center;
     font-size: 1rem;
     background-color: var(--color);
+}
+
+div a#top {
+    color: white;
+    text-decoration: underline;
 }
 
 /* ------------------------------------------ */
@@ -241,6 +251,7 @@ footer {
         flex-grow: 1;
         margin: 10px;
     }
+    
     div.h {
         flex-grow: 1;
         flex-wrap: wrap;

@@ -3,27 +3,27 @@
         {
             "id": 0,
             "name": "PHP",
-            "src": "src/img/skills/php.png"
+            "src": "src/css/img/skills/php.png"
         },
         {
             "id": 1,
             "name": "Python",
-            "src": "src/img/skills/python.png"
+            "src": "src/css/img/skills/python.png"
         },
         {
             "id": 2,
             "name": "JavaScript",
-            "src": "src/img/skills/javascript.png"
+            "src": "src/css/img/skills/javascript.png"
         },
         {
             "id": 3,
             "name": "Java",
-            "src": "src/img/skills/java.png"
+            "src": "src/css/img/skills/java.png"
         },
         {
             "id": 5,
             "name": "CSS",
-            "src": "src/img/skills/css.png"
+            "src": "src/css/img/skills/css.png"
         }
     ],
     "projects": [
@@ -31,13 +31,13 @@
             "id": 0,
             "name": "BookPoint",
             "images": [
-                "src/img/bk_home.png",
-                "src/img/bk_home(1).png",
-                "src/img/bk_more.png",
-                "src/img/bk_car.png",
-                "src/img/bk_support.png",
-                "src/img/bk_login.png",
-                "src/img/bk_adm.png"
+                "src/css/img/bk_home.png",
+                "src/css/img/bk_home(1).png",
+                "src/css/img/bk_more.png",
+                "src/css/img/bk_car.png",
+                "src/css/img/bk_support.png",
+                "src/css/img/bk_login.png",
+                "src/css/img/bk_adm.png"
             ],
             "description": "Um projeto de livraria, para encerramento do 3° ano no IFRS.",
             "description_large": "Um projeto ao qual eu devia demonstrar meus conhecimentos em banco de dados, utilizando a linguagem PHP e sobre PostgresSQL, criando assim um sistema completo de livraria. O design foi remodelado em 2020 e não faz uso de qualquer framework PHP.",
@@ -48,13 +48,13 @@
             "id": 1,
             "name": "Toka",
             "images": [
-                "src/img/tk_home.png",
-                "src/img/tk_home(1).png",
-                "src/img/tk_films.png",
-                "src/img/tk_series.png",
-                "src/img/tk_login.png",
-                "src/img/tk_watch.png",
-                "src/img/tk_watch(1).png"
+                "src/css/img/tk_home.png",
+                "src/css/img/tk_home(1).png",
+                "src/css/img/tk_films.png",
+                "src/css/img/tk_series.png",
+                "src/css/img/tk_login.png",
+                "src/css/img/tk_watch.png",
+                "src/css/img/tk_watch(1).png"
             ],
             "description": "Site no estilo da netflix de séries e filmes feito em React Native.",
             "description_large": "Esse é um projeto ao qual quis testar meus conhecimentos sobre React que, após fazer um curso na Udemy, achei que já era capaz e assim criei um design todo sem utilizar banco de dados.",
