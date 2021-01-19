@@ -60,6 +60,15 @@
             "description_large": "Esse é um projeto ao qual quis testar meus conhecimentos sobre React que, após fazer um curso na Udemy, achei que já era capaz e assim criei um design todo sem utilizar banco de dados.",
             "linguagens": [ "HTML5", "CSS3", "JavaScript", "React"],
             "link": "https://github.com/AlanDeveloper/Toka"
+        },
+        {
+            "id": 2,
+            "name": "DS Delivery",
+            "images": [],
+            "description": "Projeto da 2ª ed. da Semana DevSuperior.",
+            "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem. <br />Link do projeto: https://delivery-sds2.netlify.app",
+            "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "ReactJS"],
+            "link": "https://github.com/AlanDeveloper/DS_Delivery"
         }
     ]
 }
