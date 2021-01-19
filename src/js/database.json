@@ -64,7 +64,15 @@
         {
             "id": 2,
             "name": "DS Delivery",
-            "images": [],
+            "images": [
+                "src/css/img/tk_home.png",
+                "src/css/img/tk_home(1).png",
+                "src/css/img/tk_films.png",
+                "src/css/img/tk_series.png",
+                "src/css/img/tk_login.png",
+                "src/css/img/tk_watch.png",
+                "src/css/img/tk_watch(1).png"
+            ],
             "description": "Projeto da 2ª ed. da Semana DevSuperior.",
             "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem. <br />Link do projeto: https://delivery-sds2.netlify.app",
             "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "ReactJS"],
