@@ -1,4 +1,4 @@
-$.getJSON("src/js/database.json", function (data) {
+$.getJSON("https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/src/js/database.json", function (data) {
     let projects = data.projects;
     let response = '';
     
