@@ -1,6 +1,7 @@
-$.getJSON("https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/src/js/database.json", function (data) {
+$.getJSON("https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/back-end/database.json", function (data) {
     let projects = data.projects;
     let response = '';
+    console.log(projects.length)
     
     for (let i = 0; i < projects.length; i++) {
         response += '<div class="col mb-4">';
