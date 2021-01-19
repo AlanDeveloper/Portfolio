@@ -1,4 +1,6 @@
-$.getJSON("https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/back-end/database.json", function (data) {
+const DABATASE_URL = "https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/back-end/database.json";
+
+$.getJSON(DATABASE_URL, function (data) {
     let projects = data.projects;
     let response = '';
     console.log(projects.length)
@@ -19,7 +21,7 @@ $.getJSON("https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/back
     document.querySelector('#cards').innerHTML = response;
 });
 
-$.getJSON("src/js/database.json", function (data) {
+$.getJSON(DATABASE_URL, function (data) {
     let skills = data.skills;
     let response = '';
 
@@ -36,7 +38,7 @@ $.getJSON("src/js/database.json", function (data) {
 
 
 function modal(id){
-    $.getJSON("src/js/database.json", function (data) {
+    $.getJSON(DATABASE_URL, function (data) {
         let projects = data.projects;
         let response = '';
         
