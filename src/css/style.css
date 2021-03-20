@@ -23,6 +23,10 @@
     font-size: 1rem;
 }
 
+.first {
+    margin-left: 0px;
+}
+
 .title div {
     display: flex;
     align-items: center;
@@ -194,7 +198,7 @@ div.modal-footer .descrip {
     margin: 15px 0px;
 }
 div.modal-footer .descrip p {
-    margin-bottom: 0;
+    margin-bottom: 5px;
 }
 
 span.carousel-control-next-icon, span.carousel-control-prev-icon {
