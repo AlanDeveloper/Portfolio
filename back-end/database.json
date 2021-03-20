@@ -8,22 +8,22 @@
         {
             "id": 1,
             "name": "Python",
-            "src": "src/css/img/skills/python.png"
+            "src": "src/assets/img/skills/python.png"
         },
         {
             "id": 2,
             "name": "JavaScript",
-            "src": "src/css/img/skills/javascript.png"
+            "src": "src/assets/img/skills/javascript.png"
         },
         {
             "id": 3,
             "name": "Java",
-            "src": "src/css/img/skills/java.png"
+            "src": "src/assets/img/skills/java.png"
         },
         {
             "id": 5,
             "name": "CSS",
-            "src": "src/css/img/skills/css.png"
+            "src": "src/assets/img/skills/css.png"
         }
     ],
     "projects": [

@@ -4,7 +4,7 @@ const DABATASE_URL = "/Portfolio/back-end";
 $.getJSON(DABATASE_URL + '/database.json', function (data) {
 // $.getJSON(DABATASE_URL + '/projects', function (data) {
     let projects = data.projects;
-    let projects = data;
+    // let projects = data;
     let response = '';
     
     for (let i = 0; i < projects.length; i++) {
@@ -24,7 +24,7 @@ $.getJSON(DABATASE_URL + '/database.json', function (data) {
 $.getJSON(DABATASE_URL + '/database.json', function (data) {
 // $.getJSON(DABATASE_URL + '/skills', function (data) {
     let skills = data.skills;
-    let skills = data;
+    // let skills = data;
     let response = '';
 
     for (let i = 0; i < skills.length; i++) {
