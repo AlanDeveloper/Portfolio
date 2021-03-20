@@ -108,23 +108,38 @@ button.navbar-toggler:focus {
     outline: none;
 }
 
-div.card button.btn-project {
-    box-shadow: none;
-    color: white;
-    background-color: var(--color);
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    /* background-color: #800000; */
-}
-
-div.card button.btn-project:hover {
-    transition: .2s all;
-    background-color: #464c52;
-    /* background-color: #800000; */
-}
-
 div.card img {
     height: 200px;
+    position: relative;
+    border-radius: 5px; 
+}
+
+div.card:hover .cover {
+    opacity: 1;
+}
+
+div.card .cover {
+    transition: .5s ease;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+}
+
+div.card .cover .text {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 div ul {

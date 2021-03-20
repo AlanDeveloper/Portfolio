@@ -31,13 +31,13 @@
             "id": 0,
             "name": "BookPoint",
             "images": [
-                "src/css/img/bk_home.png",
-                "src/css/img/bk_home(1).png",
-                "src/css/img/bk_more.png",
-                "src/css/img/bk_car.png",
-                "src/css/img/bk_support.png",
-                "src/css/img/bk_login.png",
-                "src/css/img/bk_adm.png"
+                "src/assets/img/bk_home.png",
+                "src/assets/img/bk_home(1).png",
+                "src/assets/img/bk_more.png",
+                "src/assets/img/bk_car.png",
+                "src/assets/img/bk_support.png",
+                "src/assets/img/bk_login.png",
+                "src/assets/img/bk_adm.png"
             ],
             "description": "Um projeto de livraria, para encerramento do 3° ano no IFRS.",
             "description_large": "Um projeto ao qual eu devia demonstrar meus conhecimentos em banco de dados, utilizando a linguagem PHP e sobre PostgresSQL, criando assim um sistema completo de livraria. O design foi remodelado em 2020 e não faz uso de qualquer framework PHP.",
@@ -48,13 +48,13 @@
             "id": 1,
             "name": "Toka",
             "images": [
-                "src/css/img/tk_home.png",
-                "src/css/img/tk_home(1).png",
-                "src/css/img/tk_films.png",
-                "src/css/img/tk_series.png",
-                "src/css/img/tk_login.png",
-                "src/css/img/tk_watch.png",
-                "src/css/img/tk_watch(1).png"
+                "src/assets/img/tk_home.png",
+                "src/assets/img/tk_home(1).png",
+                "src/assets/img/tk_films.png",
+                "src/assets/img/tk_series.png",
+                "src/assets/img/tk_login.png",
+                "src/assets/img/tk_watch.png",
+                "src/assets/img/tk_watch(1).png"
             ],
             "description": "Site no estilo da netflix de séries e filmes feito em React Native.",
             "description_large": "Esse é um projeto ao qual quis testar meus conhecimentos sobre React que, após fazer um curso na Udemy, achei que já era capaz e assim criei um design todo sem utilizar banco de dados.",
@@ -65,13 +65,13 @@
             "id": 2,
             "name": "DS Delivery",
             "images": [
-                "src/css/img/tk_home.png",
-                "src/css/img/tk_home(1).png",
-                "src/css/img/tk_films.png",
-                "src/css/img/tk_series.png",
-                "src/css/img/tk_login.png",
-                "src/css/img/tk_watch.png",
-                "src/css/img/tk_watch(1).png"
+                "src/assets/img/tk_home.png",
+                "src/assets/img/tk_home(1).png",
+                "src/assets/img/tk_films.png",
+                "src/assets/img/tk_series.png",
+                "src/assets/img/tk_login.png",
+                "src/assets/img/tk_watch.png",
+                "src/assets/img/tk_watch(1).png"
             ],
             "description": "Projeto da 2ª ed. da Semana DevSuperior.",
             "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem. <br />Link do projeto: https://delivery-sds2.netlify.app",

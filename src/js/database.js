@@ -1,18 +1,19 @@
-const DABATASE_URL = "/Portfolio/back-end/database.json";
+const DABATASE_URL = "/Portfolio/back-end";
+// const DABATASE_URL = "http:localhost:3000";
 
-$.getJSON(DABATASE_URL, function (data) {
+$.getJSON(DABATASE_URL + '/database.json/projects', function (data) {
+// $.getJSON(DABATASE_URL + '/projects', function (data) {
     let projects = data.projects;
+    let projects = data;
     let response = '';
     
     for (let i = 0; i < projects.length; i++) {
         response += '<div class="col mb-4">';
         response += '<div class="card">';
-        response += '<img src='+ projects[i].images[0] +' class="card-img-top">';
-        response += '<div class="card-body">';
-        response += '<h5 class="card-title">'+ projects[i].name +'</h5>';
-        response += '<p class="card-text">'+ projects[i].description +'</p>';
+        response += '<img src=' + projects[i].images[0] +' class="card-img-top">';
+        response += '<div class="cover" id="modal_' + projects[i].id + '" onClick="modal(' + projects[i].id +')" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">';
+        response += '<div class="text">' + projects[i].name + '</div>';
         response += '</div>';
-        response += '<button type="button" class="btn btn-project mt-4 p-3" id="modal_' + projects[i].id + '" onClick="modal('+ projects[i].id +')" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Ver mais</button>';
         response += '</div>';
         response += '</div>';
     }
@@ -20,8 +21,10 @@ $.getJSON(DABATASE_URL, function (data) {
     document.querySelector('#cards').innerHTML = response;
 });
 
-$.getJSON(DABATASE_URL + '/skills', function (data) {
+$.getJSON(DABATASE_URL + '/database.json/skills', function (data) {
+// $.getJSON(DABATASE_URL + '/skills', function (data) {
     let skills = data.skills;
+    let skills = data;
     let response = '';
 
     for (let i = 0; i < skills.length; i++) {
@@ -37,7 +40,7 @@ $.getJSON(DABATASE_URL + '/skills', function (data) {
 
 
 function modal(id){
-    $.getJSON(DATABASE_URL, function (data) {
+    $.getJSON(DABATASE_URL + '/database.json/projects', function (data) {
         let projects = data.projects;
         let response = '';
         
