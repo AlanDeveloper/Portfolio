@@ -1,7 +1,7 @@
 const DABATASE_URL = "/Portfolio/back-end";
 // const DABATASE_URL = "http:localhost:3000";
 
-$.getJSON(DABATASE_URL + '/database.json/projects', function (data) {
+$.getJSON(DABATASE_URL + '/database.json', function (data) {
 // $.getJSON(DABATASE_URL + '/projects', function (data) {
     let projects = data.projects;
     let projects = data;
@@ -21,7 +21,7 @@ $.getJSON(DABATASE_URL + '/database.json/projects', function (data) {
     document.querySelector('#cards').innerHTML = response;
 });
 
-$.getJSON(DABATASE_URL + '/database.json/skills', function (data) {
+$.getJSON(DABATASE_URL + '/database.json', function (data) {
 // $.getJSON(DABATASE_URL + '/skills', function (data) {
     let skills = data.skills;
     let skills = data;
@@ -40,7 +40,7 @@ $.getJSON(DABATASE_URL + '/database.json/skills', function (data) {
 
 
 function modal(id){
-    $.getJSON(DABATASE_URL + '/database.json/projects', function (data) {
+    $.getJSON(DABATASE_URL + '/database.json', function (data) {
         let projects = data.projects;
         let response = '';
         
