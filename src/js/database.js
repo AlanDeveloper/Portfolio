@@ -1,4 +1,4 @@
-const DABATASE_URL = "/Portfolio/back-end";
+const DABATASE_URL = "/Portfolio";
 // const DABATASE_URL = "http:localhost:3000";
 
 $.getJSON(DABATASE_URL + '/database.json', function (data) {
@@ -58,6 +58,7 @@ function modal(id){
         response = '';
         response += '<h4 class="modal-title-secondary">'+ projects[id].name +'</h4><br>';
         response += '<p class="justify pt-4 pb-3 description-large">' + projects[id].description_large + '<br>Link do repositório: <a href="' + projects[id].link + '">' + projects[id].link +'</a></p>';
+        response += '<p>Link online: <a href="' + projects[id].linkOnline + '">' + projects[id].linkOnline +'</a></p>';
         for (let i = 0; i < projects[id].linguagens.length; i++) {
             response += '<div class="tools">'+ projects[id].linguagens[i] +'</div>';
         }
