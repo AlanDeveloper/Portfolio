@@ -1,7 +1,7 @@
-const DABATASE_URL = "https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/back-end/database.json";
+const DABATASE_URL = "https://github.com/AlanDeveloper/Portfolio/blob/master/back-end/database.json";
 // const DABATASE_URL = "http:localhost:3000";
 
-$.getJSON(DABATASE_URL + '/projects', function (projects) {
+$.getJSON(DABATASE_URL, function (projects) {
     console.log(projects)
     let response = '';
     
