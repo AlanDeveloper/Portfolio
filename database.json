@@ -63,7 +63,7 @@
                 "src/assets/img/tk_watch.png",
                 "src/assets/img/tk_watch(1).png"
             ],
-            "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem. <br />Link do projeto: https://delivery-sds2.netlify.app",
+            "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem.",
             "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "ReactJS"],
             "link": "https://github.com/AlanDeveloper/DS_Delivery",
             "linkOnline": "https://delivery-sds2.netlify.app/"
