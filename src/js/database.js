@@ -1,7 +1,8 @@
 const DABATASE_URL = "https://raw.githubusercontent.com/AlanDeveloper/Portfolio/master/back-end/database.json";
+// const DABATASE_URL = "http:localhost:3000";
 
-$.getJSON(DATABASE_URL, function (data) {
-    let projects = data.projects;
+$.getJSON(DABATASE_URL + '/projects', function (projects) {
+    console.log(projects)
     let response = '';
     
     for (let i = 0; i < projects.length; i++) {
@@ -20,8 +21,7 @@ $.getJSON(DATABASE_URL, function (data) {
     document.querySelector('#cards').innerHTML = response;
 });
 
-$.getJSON(DATABASE_URL, function (data) {
-    let skills = data.skills;
+$.getJSON(DABATASE_URL + '/skills', function (skills) {
     let response = '';
 
     for (let i = 0; i < skills.length; i++) {
