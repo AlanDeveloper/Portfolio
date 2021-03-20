@@ -32,7 +32,7 @@
             "description_large": "Um projeto ao qual eu devia demonstrar meus conhecimentos em banco de dados, utilizando a linguagem PHP e sobre PostgresSQL, criando assim um sistema completo de livraria. O design foi remodelado em 2020 e não faz uso de qualquer framework PHP.",
             "linguagens": [ "PHP", "PostgresSQL", "Materialize"],
             "link": "https://github.com/AlanDeveloper/Book-Point",
-            "linkOnline": "bk-point.herokuapp.com"
+            "linkOnline": "https://bk-point.herokuapp.com/"
         },
         {
             "id": 1,
@@ -66,7 +66,7 @@
             "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem. <br />Link do projeto: https://delivery-sds2.netlify.app",
             "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "ReactJS"],
             "link": "https://github.com/AlanDeveloper/DS_Delivery",
-            "linkOnline": "delivery-sds2.netlify.app"
+            "linkOnline": "https://delivery-sds2.netlify.app/"
         }
     ]
 }
