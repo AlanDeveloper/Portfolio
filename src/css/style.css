@@ -188,6 +188,9 @@ div.modal-footer {
     padding: 2rem;
     justify-content: inherit;
 }
+div.modal-footer .descrip {
+    width: 100%;
+}
 
 span.carousel-control-next-icon, span.carousel-control-prev-icon {
     background-color: #343a40;
