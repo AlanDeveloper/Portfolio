@@ -1,8 +1,7 @@
 const DABATASE_URL = "/Portfolio/back-end/database.json";
-// const DABATASE_URL = "http:localhost:3000";
 
-$.getJSON(DABATASE_URL, function (projects) {
-    console.log(projects)
+$.getJSON(DABATASE_URL, function (data) {
+    let projects = data.projects;
     let response = '';
     
     for (let i = 0; i < projects.length; i++) {
@@ -21,7 +20,8 @@ $.getJSON(DABATASE_URL, function (projects) {
     document.querySelector('#cards').innerHTML = response;
 });
 
-$.getJSON(DABATASE_URL + '/skills', function (skills) {
+$.getJSON(DABATASE_URL + '/skills', function (data) {
+    let skills = data.skills;
     let response = '';
 
     for (let i = 0; i < skills.length; i++) {
