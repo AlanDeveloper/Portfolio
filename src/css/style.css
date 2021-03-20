@@ -200,18 +200,11 @@ div.icons a:hover {
 /* FOOTER */
 
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    line-height: 50px;
     color: white;
     text-align: center;
     font-size: 1rem;
-    background-color: var(--color);
-}
-
-div a#top {
-    color: white;
-    text-decoration: underline;
+    background-color: var(--color-header);
 }
 
 /* ------------------------------------------ */

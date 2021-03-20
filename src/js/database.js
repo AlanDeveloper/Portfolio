@@ -3,7 +3,6 @@ const DABATASE_URL = "https://raw.githubusercontent.com/AlanDeveloper/Portfolio/
 $.getJSON(DATABASE_URL, function (data) {
     let projects = data.projects;
     let response = '';
-    console.log(projects.length)
     
     for (let i = 0; i < projects.length; i++) {
         response += '<div class="col mb-4">';
