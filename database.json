@@ -36,23 +36,6 @@
         },
         {
             "id": 1,
-            "name": "Toka",
-            "images": [
-                "src/assets/img/tk_home.png",
-                "src/assets/img/tk_home(1).png",
-                "src/assets/img/tk_films.png",
-                "src/assets/img/tk_series.png",
-                "src/assets/img/tk_login.png",
-                "src/assets/img/tk_watch.png",
-                "src/assets/img/tk_watch(1).png"
-            ],
-            "description_large": "Esse é um projeto ao qual quis testar meus conhecimentos sobre React que, após fazer um curso na Udemy, achei que já era capaz e assim criei um design todo sem utilizar banco de dados.",
-            "linguagens": [ "HTML5", "CSS3", "JavaScript", "React"],
-            "link": "https://github.com/AlanDeveloper/Toka",
-            "linkOnline": "bk-point.herokuapp.com"
-        },
-        {
-            "id": 2,
             "name": "DS Delivery",
             "images": [
                 "src/assets/img/tk_home.png",
@@ -69,7 +52,7 @@
             "linkOnline": "https://delivery-sds2.netlify.app/"
         },
         {
-            "id": 3,
+            "id": 2,
             "name": "Quiz",
             "images": [
                 "src/assets/img/tk_home.png",

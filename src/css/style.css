@@ -81,16 +81,18 @@ img.img-thumbnail {
 }
 
 .btn-cv {
+    margin-top: 10px;
     border-radius: .25rem;
     color: white;
     padding: 10px 20px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     background: var(--color-header);
 }
 
-.btn-cv:active {
+.btn-cv:active, .btn-cv:hover {
+    text-decoration: none;
     color: var(--color-header);
-    border: 1px solid var(--color-header);
+    border: 2px solid var(--color-header);
     background-color: #fff;
 }
 
