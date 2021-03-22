@@ -78,34 +78,13 @@ main {
     max-height: 500px;
 }
 
-div.h {
-    display: flex;
-}
-
-div.hability {
-    color: white;
-    background-color: #1f3347;
-    /* background-color: #800000; */
-    width: 150px;
-    height: 120px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    margin: 10px;
-    margin-left: 0px;
-}
-
-div.hability div {
-    margin-top: 10px;
-}
-
-div.hability p {
-    margin: 0px;
-    margin-top: 5px;
-}
-
 p.sec {
     font-size: 1.25rem;
+}
+
+button.navbar-toggler {
+    border: 0;
+    padding: 0;
 }
 
 button.navbar-toggler:focus {
@@ -195,6 +174,7 @@ div.modal-footer {
 
 div.modal-footer .descrip {
     width: 100%;
+    text-align: justify;
     margin: 15px 0px;
 }
 div.modal-footer .descrip p {
@@ -265,16 +245,5 @@ footer {
     .tools {
         flex-grow: 1;
         text-align: center;
-    }
-
-    .hability {
-        flex-grow: 1;
-        margin: 10px;
-    }
-    
-    div.h {
-        flex-grow: 1;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 }

@@ -58,7 +58,7 @@ function modal(id){
         response = '';
         response += '<h4 class="modal-title-secondary">'+ projects[id].name +'</h4>';
         response += '<div class="descrip"><p>' + projects[id].description_large + '</p>';
-        response += '<p>Link do repositório: <a href="' + projects[id].link + '">' + projects[id].link + '</a></p>';
+        response += '<p>Link do repositório: <a href="' + projects[id].link + '" target="_blank">' + projects[id].link + '</a></p>';
         response += '<p>Link online: <a href="' + projects[id].linkOnline + '" target="_blank">' + projects[id].linkOnline +'</a></p></div>';
         for (let i = 0; i < projects[id].linguagens.length; i++) {
             response += `<div class="tools ${i === 0 ? 'first' : ''}">${projects[id].linguagens[i]}</div>`;
