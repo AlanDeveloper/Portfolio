@@ -67,6 +67,23 @@
             "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "ReactJS"],
             "link": "https://github.com/AlanDeveloper/DS_Delivery",
             "linkOnline": "https://delivery-sds2.netlify.app/"
+        },
+        {
+            "id": 3,
+            "name": "Quiz",
+            "images": [
+                "src/assets/img/tk_home.png",
+                "src/assets/img/tk_home(1).png",
+                "src/assets/img/tk_films.png",
+                "src/assets/img/tk_series.png",
+                "src/assets/img/tk_login.png",
+                "src/assets/img/tk_watch.png",
+                "src/assets/img/tk_watch(1).png"
+            ],
+            "description_large": "Projeto desenvolvido durante a imersão React Next JS da Alura, com intuito de ter algum conhecimento em Next JS.",
+            "linguagens": ["Next JS", "ReactJS"],
+            "link": "https://github.com/AlanDeveloper/Quiz",
+            "linkOnline": "https://quiz.alandeveloper.vercel.app"
         }
     ]
 }
