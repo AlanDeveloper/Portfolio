@@ -109,10 +109,6 @@ button.navbar-toggler:focus {
     outline: none;
 }
 
-div.card-body {
-    padding: 2rem;
-}
-
 div.card img {
     height: 200px;
     position: relative;
