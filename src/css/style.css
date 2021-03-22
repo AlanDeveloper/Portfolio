@@ -81,7 +81,7 @@ img.img-thumbnail {
 }
 
 .btn-cv {
-    margin-top: 10px;
+    transition: .7s all;
     border-radius: .25rem;
     color: white;
     padding: 10px 20px;
