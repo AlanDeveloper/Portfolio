@@ -72,7 +72,7 @@ main {
     margin: auto;
 }
 
-.img-thumbnail {
+img.img-thumbnail {
     max-height: 500px;
     border: 0;
     padding: 0;
@@ -81,6 +81,7 @@ main {
 }
 
 .btn-cv {
+    border-radius: .25rem;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -101,7 +102,7 @@ button.navbar-toggler:focus {
 }
 
 div.card-body {
-    padding: 1rem 3rem;
+    padding: 2rem;
 }
 
 div.card img {
