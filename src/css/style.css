@@ -59,6 +59,7 @@
 
 header {
     background-color: var(--color-primary);
+    border-bottom: 2px solid #fca311;
 }
 
 nav.navbar {
@@ -68,8 +69,12 @@ nav.navbar {
 }
 
 nav.navbar a.nav-link {
-    color: var(--color-yellow);
+    color: var(--color-yellow) !important;
     font-weight: bold;
+}
+
+nav h1 {
+    margin: 0;
 }
 
 .navbar-collapse {
@@ -131,6 +136,10 @@ div.card img {
     border-radius: var(--border-radius); 
 }
 
+h3.title-name {
+    border-bottom: 2px solid #ffb703;
+}
+
 div.card:hover .cover {
     opacity: 1;
 }
@@ -176,6 +185,7 @@ div.skills {
 
 div.skills div {
     padding: 10px 20px;
+    border: 2px solid #fff;
 }
 
 div.skills img {
