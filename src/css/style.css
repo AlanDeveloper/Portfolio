@@ -1,10 +1,11 @@
 /* ROOT */
 
 :root {
-    --color-primary: #2f3337;
+    --color-primary: #14213d;
     --color-secondary: #f8f9fa;
     /* --color-blue: #1f3347; */
     --color-text: #fff;
+    --color-yellow: #fca311;
 
     --border-radius: .25rem;
 }
@@ -65,8 +66,8 @@ nav.navbar {
     min-height: 80px;
 }
 
-nav.navbar-nav.link {
-    color: #ffb703;
+nav.navbar-nav a {
+    color: var(--color-yellow);
     font-weight: bold;
 }
 
