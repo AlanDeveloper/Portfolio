@@ -15,7 +15,6 @@
 }
 
 .tools {
-    background-color: var(--color-secondary);
     color: var(--color-text);
     padding: 15px;
     border-radius: 5px;

@@ -61,7 +61,7 @@ function modal(id){
         response += '<p>Link do repositório: <a href="' + projects[id].link + '" target="_blank">' + projects[id].link + '</a></p>';
         response += '<p>Link online: <a href="' + projects[id].linkOnline + '" target="_blank">' + projects[id].linkOnline +'</a></p></div>';
         for (let i = 0; i < projects[id].linguagens.length; i++) {
-            response += `<div class="tools ${i === 0 ? 'first' : ''}">${projects[id].linguagens[i]}</div>`;
+            response += `<div class="tools bgg-secondary ${i === 0 ? 'first' : ''}">${projects[id].linguagens[i]}</div>`;
         }
         document.querySelector('div.modal-footer').innerHTML = response;
     });
