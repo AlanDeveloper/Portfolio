@@ -58,7 +58,6 @@
 /* NAVBAR */
 
 header {
-    background-color: var(--color-primary);
     border-bottom: 2px solid #fca311;
 }
 
@@ -146,7 +145,7 @@ div.card:hover .cover {
 }
 
 div.card .cover {
-    transition: .5s ease;
+    transition: .7s ease;
     cursor: pointer;
     background-color: var(--color-yellow);
     opacity: 0;
@@ -247,10 +246,11 @@ div.icons a {
 /* FOOTER */
 
 footer {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     color: var(--color-text);
-    text-align: center;
     font-size: 1rem;
-    background-color: var(--color-primary);
 }
 
 /* ------------------------------------------ */
@@ -280,7 +280,7 @@ footer {
         margin: auto;
     }
 
-    .card-body {
+    .card-body, nav.navbar.navbar-expand-lg {
         padding: 1.25rem 0 !important;
     }
 }
