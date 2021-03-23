@@ -42,7 +42,6 @@
     margin: 0px;
     color: var(--color-text);
     padding: 5px;
-    opacity: 0.5;
 }
 
 .title div hr {
@@ -51,6 +50,7 @@
 }
 
 .bgg-secondary {
+    color: #fff;
     border-radius: var(--border-radius);
 }
 
@@ -67,7 +67,7 @@ nav.navbar {
     min-height: 80px;
 }
 
-nav.navbar-nav a {
+nav.navbar a.nav-link {
     color: var(--color-yellow);
     font-weight: bold;
 }
@@ -102,7 +102,7 @@ img.img-thumbnail {
     color: var(--color-text);
     padding: 10px 20px;
     border: 2px solid transparent;
-    background: var(--color-primary);
+    background: var(--color-yellow);
 }
 
 .btn-cv:active, .btn-cv:hover {
