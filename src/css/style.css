@@ -264,6 +264,27 @@ div .icon-phone {
     background-size: 100%;
 }
 
+div .icon-facebook {
+    background: url(../assets/icons/facebook.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px 18px;
+}
+
+div .icon-linkedin {
+    background: url(../assets/icons/linkedin.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px 18px;
+}
+
+div .icon-github {
+    background: url(../assets/icons/github.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px 18px;
+}
+
 /* ------------------------------------------ */
 /* FOOTER */
 
