@@ -4,6 +4,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 80px;
     grid-template-areas: 'header' 'main' 'footer';
+    background-color: #14213d;
 }
 
 header {

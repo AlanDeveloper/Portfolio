@@ -50,7 +50,6 @@
 
 .bgg-secondary {
     border-radius: var(--border-radius);
-    background-color: var(--color-secondary);
 }
 
 /* ------------------------------------------ */
@@ -64,6 +63,11 @@ nav.navbar {
     margin: auto;
     width: 70%;
     min-height: 80px;
+}
+
+nav.navbar-nav.link {
+    color: #ffb703;
+    font-weight: bold;
 }
 
 .navbar-collapse {
