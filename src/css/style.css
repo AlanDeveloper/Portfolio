@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: #2f3337;
-    --color-secondary: #6c757d;
+    --color-secondary: #f8f9fa;
     /* --color-blue: #1f3347; */
     --color-text: #fff;
 
@@ -28,9 +28,9 @@
     margin-left: 0px !important;
 }
 
-.title {
+/* .title {
     color: var(--color-text);
-}
+} */
 
 .title div {
     display: flex;
