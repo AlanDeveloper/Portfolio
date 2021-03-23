@@ -219,7 +219,6 @@ span.carousel-control-next-icon, span.carousel-control-prev-icon {
 div.icons {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 div.icons a {
@@ -235,7 +234,7 @@ div.icons a:hover {
 /* FOOTER */
 
 footer {
-    line-height: 50px;
+    line-height: 80px;
     color: var(--color-text);
     text-align: center;
     font-size: 1rem;
