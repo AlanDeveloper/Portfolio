@@ -28,9 +28,9 @@
     margin-left: 0px !important;
 }
 
-/* .title {
-    color: var(--color-text);
-} */
+.text-color {
+    color: black;
+}
 
 .title div {
     display: flex;
