@@ -44,6 +44,10 @@
     flex: 1;
 }
 
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+
 /* ------------------------------------------ */
 /* NAVBAR */
 
