@@ -138,6 +138,7 @@ div.card img {
 
 h3.title-name {
     border-bottom: 2px solid #ffb703;
+    padding-bottom: 10px;
 }
 
 div.card:hover .cover {
@@ -282,10 +283,18 @@ footer {
     .no-gutters {
         margin: auto;
     }
+
+    .card-body {
+        padding: 1.25rem 0;
+    }
 }
 @media (max-width: 500px) {
     .tools {
         flex-grow: 1;
         text-align: center;
     }
+
+    div.skills > div > div{
+        border: none;
+    }    
 }
