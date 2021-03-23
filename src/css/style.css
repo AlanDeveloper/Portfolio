@@ -2,10 +2,8 @@
 
 :root {
     --color-primary: #14213d;
-    --color-secondary: #f8f9fa;
-    /* --color-blue: #1f3347; */
-    --color-text: #fff;
     --color-yellow: #fca311;
+    --color-text: #fff;
 
     --border-radius: .25rem;
 }
@@ -157,7 +155,7 @@ div.card .cover {
 
 div.card .cover .text {
     font-weight: bold;
-    color: var(--color-primary);
+    color: var(--color-text);
     font-size: 20px;
     position: absolute;
     top: 50%;
