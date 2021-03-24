@@ -111,10 +111,6 @@ img.img-thumbnail {
     background-color: var(--color-primary);
 }
 
-p.sec {
-    font-size: 1.25rem;
-}
-
 button.navbar-toggler {
     border: 0;
     padding: 0;
@@ -325,6 +321,15 @@ footer {
 
     .btn-cv {
         top: 10px;
+    }
+
+    h3.title-name {
+        border-bottom: none;
+        padding-bottom: 0px;
+    }
+
+    p.card-text {
+        display: none;
     }
 }
 @media (max-width: 500px) {
