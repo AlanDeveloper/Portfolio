@@ -28,7 +28,7 @@ $.getJSON(DABATASE_URL + '/database.json', function (data) {
     let response = '';
 
     for (let i = 0; i < skills.length; i++) {
-        response += '<div class="bgg-secondary">';
+        response += '<div class="text-white mt-2">';
         response += '<div class="row">';
         response += '<img src="' + skills[i].src + '" alt="' + skills[i].name.toLowerCase() + '">';
         response += '<p>' + skills[i].name  + '</p>';
