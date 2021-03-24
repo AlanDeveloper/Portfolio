@@ -328,7 +328,7 @@ footer {
         padding-bottom: 0px;
     }
 
-    p.card-text {
+    div.card-body p.card-text {
         display: none;
     }
 }
