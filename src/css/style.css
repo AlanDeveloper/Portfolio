@@ -197,8 +197,7 @@ div.modal .modal-header {
     padding: 10px;
 }
 
-
-div.modal .modal-header span {
+div.modal .modal-header .close {
     outline: none;
 }
 
@@ -211,7 +210,6 @@ div.modal-dialog {
 }
 
 div.modal-footer {
-    padding: 2rem;
     justify-content: inherit;
 }
 
