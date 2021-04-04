@@ -204,6 +204,9 @@ div.modal .modal-header .close {
 div.modal .modal-body {
     padding: 0;
 }
+div.modal .modal-body .carousel img {
+    min-height: 30vh;
+}
 
 div.modal-dialog {
     max-width: 1200px;
@@ -279,6 +282,13 @@ div .icon-linkedin {
 
 div .icon-github {
     background: url(../assets/icons/github.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px 18px;
+}
+
+div .icon-link {
+    background: url(../assets/icons/link.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 10px 18px;
