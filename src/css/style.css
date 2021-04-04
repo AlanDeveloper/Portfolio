@@ -16,7 +16,7 @@
 }
 
 .tools {
-    color: var(--color-text);
+    background-color: var(--color-yellow);
     padding: 15px;
     margin-right: 5px;
     margin-bottom: 5px;
