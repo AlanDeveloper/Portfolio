@@ -21,15 +21,18 @@
             "id": 0,
             "name": "BookPoint",
             "images": [
-                "src/assets/img/bk_home.png",
-                "src/assets/img/bk_home(1).png",
-                "src/assets/img/bk_more.png",
-                "src/assets/img/bk_car.png",
-                "src/assets/img/bk_support.png",
-                "src/assets/img/bk_login.png",
-                "src/assets/img/bk_adm.png"
+                "src/assets/img/book-point/image 1.png",
+                "src/assets/img/book-point/image 2.png",
+                "src/assets/img/book-point/image 3.png",
+                "src/assets/img/book-point/image 4.png",
+                "src/assets/img/book-point/image 5.png",
+                "src/assets/img/book-point/image 6.png",
+                "src/assets/img/book-point/image 7.png",
+                "src/assets/img/book-point/image 8.png",
+                "src/assets/img/book-point/image 9.png",
+                "src/assets/img/book-point/image 10.png"
             ],
-            "description_large": "Um projeto ao qual eu devia demonstrar meus conhecimentos em banco de dados, utilizando a linguagem PHP e sobre PostgresSQL, criando assim um sistema completo de livraria. O design foi remodelado em 2020 e não faz uso de qualquer framework PHP.",
+            "description_large": "Um projeto de livraria online, para encerramento do 3° ano no IFRS, remodelado em 2020.",
             "linguagens": [ "PHP", "PostgresSQL", "Materialize"],
             "link": "https://github.com/AlanDeveloper/Book-Point",
             "linkOnline": "https://bk-point.herokuapp.com/"
@@ -38,16 +41,16 @@
             "id": 1,
             "name": "DS Delivery",
             "images": [
-                "src/assets/img/tk_home.png",
-                "src/assets/img/tk_home(1).png",
-                "src/assets/img/tk_films.png",
-                "src/assets/img/tk_series.png",
-                "src/assets/img/tk_login.png",
-                "src/assets/img/tk_watch.png",
-                "src/assets/img/tk_watch(1).png"
+                "src/assets/img/ds-deliver/image 1.png",
+                "src/assets/img/ds-deliver/image 2.png",
+                "src/assets/img/ds-deliver/image 3.png",
+                "src/assets/img/ds-deliver/image 4.png",
+                "src/assets/img/ds-deliver/image 5.png",
+                "src/assets/img/ds-deliver/image 6.png",
+                "src/assets/img/ds-deliver/image 7.png"
             ],
-            "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem.",
-            "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "ReactJS"],
+            "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem, através da 2ª ed. da Semana DevSuperior",
+            "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "React JS"],
             "link": "https://github.com/AlanDeveloper/DS_Delivery",
             "linkOnline": "https://delivery-sds2.netlify.app/"
         },
@@ -55,15 +58,13 @@
             "id": 2,
             "name": "Quiz",
             "images": [
-                "src/assets/img/tk_home.png",
-                "src/assets/img/tk_home(1).png",
-                "src/assets/img/tk_films.png",
-                "src/assets/img/tk_series.png",
-                "src/assets/img/tk_login.png",
-                "src/assets/img/tk_watch.png",
-                "src/assets/img/tk_watch(1).png"
+                "src/assets/img/quiz/image 1.png",
+                "src/assets/img/quiz/image 2.png",
+                "src/assets/img/quiz/image 3.png",
+                "src/assets/img/quiz/image 4.png",
+                "src/assets/img/quiz/image 5.png"
             ],
-            "description_large": "Projeto desenvolvido durante a imersão React Next JS da Alura, com intuito de ter algum conhecimento em Next JS.",
+            "description_large": "Projeto desenvolvido durante a imersão React Next JS da Alura, com intuito de aprender algum conhecimento em Next JS.",
             "linguagens": ["Next JS", "ReactJS"],
             "link": "https://github.com/AlanDeveloper/Quiz",
             "linkOnline": "https://quiz.alandeveloper.vercel.app"
