@@ -44,10 +44,7 @@
                 "src/assets/img/ds-deliver/image_1.png",
                 "src/assets/img/ds-deliver/image_2.png",
                 "src/assets/img/ds-deliver/image_3.png",
-                "src/assets/img/ds-deliver/image_4.png",
-                "src/assets/img/ds-deliver/image_5.png",
-                "src/assets/img/ds-deliver/image_6.png",
-                "src/assets/img/ds-deliver/image_7.png"
+                "src/assets/img/ds-deliver/image_4.png"
             ],
             "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem, através da 2ª ed. da Semana DevSuperior",
             "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "React JS"],
