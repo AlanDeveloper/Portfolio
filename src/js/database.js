@@ -56,19 +56,16 @@ function modal(id){
         document.querySelector('.carousel-inner').innerHTML = response;
         
         response = '';
-        response += '<h4 class="modal-title-secondary">'+ projects[id].name +'</h4>';
+        response += '<h4 style="margin: 0px;">'+ projects[id].name +'</h4>';
         response += '<div class="descrip"><p>' + projects[id].description_large + '</p>';
-        response += '<div class="mt-3">';
-        response += '<a href="' + projects[id].link + '" target="_blank" style="padding: 10px;padding-left: 0px;"><i class="icon-github"></i></a>';
-        response += '<a href="' + projects[id].linkOnline + '" target="_blank" style="padding: 10px;"><i class="icon-link"></i></a></div>';
-        // response += '<p>Link do repositório: <a href="' + projects[id].link + '" target="_blank">' + projects[id].link + '</a></p>';
-        // response += '<p>Link online: <a href="' + projects[id].linkOnline + '" target="_blank">' + projects[id].linkOnline +'</a></p></div>';
         response += '<div class="mt-3">';
         for (let i = 0; i < projects[id].linguagens.length; i++) {
             response += `<div class="tools">${projects[id].linguagens[i]}</div>`;
-            // text - white ${ i === 0 ? 'first' : '' }
         }
         response += '</div>';
+        response += '<div class="mt-4" style="display:flex;justify-content: center;">';
+        response += '<a href="' + projects[id].link + '" target="_blank" style="padding: 10px;padding-left: 0px;"><i class="icon-github"></i></a>';
+        response += '<a href="' + projects[id].linkOnline + '" target="_blank" style="padding: 10px;"><i class="icon-link"></i></a></div>';
         document.querySelector('div.modal-footer').innerHTML = response;
     });
 }

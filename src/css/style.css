@@ -192,11 +192,18 @@ div.modal {
     padding-right: 15px !important;
 }
 
+div.modal div.modal-content {
+    background-color: var(--color-primary);
+}
+
 div.modal .modal-header {
     padding: 10px;
 }
 
 div.modal .modal-header .close {
+    font-size: 2rem;
+    color: #fff;
+    opacity: .7;
     outline: none;
 }
 
