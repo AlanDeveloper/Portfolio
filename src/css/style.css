@@ -17,10 +17,9 @@
 
 .tools {
     background-color: var(--color-yellow);
+    border-radius: var(--border-radius);
     padding: 15px;
-    margin-right: 5px;
     margin-bottom: 5px;
-    font-size: 1rem;
 }
 
 .first {
