@@ -193,6 +193,19 @@ div.modal {
     padding-right: 15px !important;
 }
 
+div.modal .modal-header {
+    padding: 10px;
+}
+
+
+div.modal .modal-header span {
+    outline: none;
+}
+
+div.modal .modal-body {
+    padding: 0;
+}
+
 div.modal-dialog {
     max-width: 1200px;
 }
