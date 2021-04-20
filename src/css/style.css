@@ -46,6 +46,22 @@ div.line hr {
     border-top: 1px solid var(--color-text);
 }
 
+.button-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-yellow);
+    transform: rotate(-90deg);
+    border: 0;
+    border-radius: var(--border-radius);
+    box-shadow: rgba(252, 163, 17, 0.35) 0px 2px 4px -1px;
+}
+
+.button-fixed:focus {
+    outline: none;
+    border: none;
+}
+
 /* ------------------------------------------ */
 /* NAVBAR */
 
@@ -298,6 +314,15 @@ div .icon-link {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 10px 18px;
+}
+
+.icon-arrow {
+    background: url(../assets/icons/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 10px;
+    position: relative;
+    bottom: -10px;
 }
 
 /* ------------------------------------------ */
