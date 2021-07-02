@@ -66,10 +66,6 @@ div.line hr {
 /* ------------------------------------------ */
 /* NAVBAR */
 
-header {
-    border-bottom: 2px solid #fca311;
-}
-
 nav.navbar {
     margin: auto;
     width: 70%;
@@ -143,7 +139,7 @@ div.card img {
 }
 
 h3.title-name {
-    border-bottom: 2px solid #ffb703;
+    border-bottom: 2px solid #fff;
     padding-bottom: 10px;
 }
 
