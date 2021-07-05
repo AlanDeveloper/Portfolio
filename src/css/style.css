@@ -108,19 +108,17 @@ img.img-thumbnail {
 .btn-cv {
     transition: .7s all;
     border-radius: var(--border-radius);
-    color: var(--color-text);
-    padding: 10px 20px;
-    border: 2px solid transparent;
+    padding: 15px 25px;
     position: relative;
-    top: 40px;
-    background: var(--color-yellow);
+    top: 20px;
+    color: var(--color-yellow);
+    border: 2px solid var(--color-yellow);
+    background-color: var(--color-primary);
 }
 
 .btn-cv:active, .btn-cv:hover {
     text-decoration: none;
-    color: var(--color-yellow);
-    border: 2px solid var(--color-yellow);
-    background-color: var(--color-primary);
+    color: #fff;
 }
 
 button.navbar-toggler {
@@ -339,10 +337,6 @@ footer {
     nav.navbar, main {
         width: 80%;
     }
-
-    .btn-cv {
-        top: 20px;
-    }
 }
 
 @media (max-width: 770px) {
@@ -369,10 +363,13 @@ footer {
     }
 
     .btn-cv {
-        top: 10px;
+        display: block;
+        text-align: center;
+        top: 0px;
     }
 
     h3.title-name {
+        text-align: center;
         border-bottom: none;
         padding-bottom: 0px;
     }
