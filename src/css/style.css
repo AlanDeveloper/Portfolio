@@ -105,22 +105,6 @@ img.img-thumbnail {
     border-radius: var(--border-radius);
 }
 
-.btn-cv {
-    transition: .7s all;
-    border-radius: var(--border-radius);
-    padding: 15px 25px;
-    position: relative;
-    top: 20px;
-    color: var(--color-secondary);
-    border: 2px solid var(--color-secondary);
-    background-color: var(--color-primary);
-}
-
-.btn-cv:active, .btn-cv:hover {
-    text-decoration: none;
-    color: #fff;
-}
-
 button.navbar-toggler {
     border: 0;
     padding: 0;
@@ -134,11 +118,6 @@ div.card img {
     height: 200px;
     position: relative;
     border-radius: var(--border-radius); 
-}
-
-h3.title-name {
-    border-bottom: 2px solid #fff;
-    padding-bottom: 10px;
 }
 
 div.card:hover .cover {
@@ -177,22 +156,44 @@ div ul li {
     padding: 10px;
 }
 
-div.skills {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 10px; 
+.technologies h1 {
+    color: #333;
 }
 
-div.skills div {
-    padding: 10px 20px;
-    border-radius: var(--border-radius);
-    border: 2px solid #fff;
+.technologies ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-div.skills img {
-    width: 40px;
-    height: 40px;
-    margin-right: 30px;
+.technologies li {
+    padding: 0px;
+}
+
+.technologies li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 10px 0;
+    padding: 20px;
+    cursor: pointer;
+    transition: transform 0.5s, color 0.5s;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.technologies li a:hover, .hovered {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+.technologies i {
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 /* ------------------------------------------ */
@@ -366,12 +367,6 @@ footer {
         padding: 1.25rem 0 !important;
     }
 
-    .btn-cv {
-        display: block;
-        text-align: center;
-        top: 0px;
-    }
-
     h3.title-name {
         text-align: center;
         border-bottom: none;
@@ -391,8 +386,4 @@ footer {
         flex-grow: 1;
         text-align: center;
     }
-
-    div.skills > div > div{
-        border: none;
-    }    
 }

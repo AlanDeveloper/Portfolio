@@ -21,24 +21,6 @@ $.getJSON(DABATASE_URL + '/database.json', function (data) {
     document.querySelector('#cards').innerHTML = response;
 });
 
-$.getJSON(DABATASE_URL + '/database.json', function (data) {
-// $.getJSON(DABATASE_URL + '/skills', function (data) {
-    let skills = data.skills;
-    // let skills = data;
-    let response = '';
-
-    for (let i = 0; i < skills.length; i++) {
-        response += '<div class="text-white mt-2">';
-        response += '<div class="row">';
-        response += '<img src="' + skills[i].src + '" alt="' + skills[i].name.toLowerCase() + '">';
-        response += '<p>' + skills[i].name  + '</p>';
-        response += '</div></div>';        
-    }
-    
-    document.querySelector('.skills').innerHTML = response;
-});
-
-
 function modal(id){
     $.getJSON(DABATASE_URL + '/database.json', function (data) {
         let projects = data.projects;
