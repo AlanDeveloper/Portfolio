@@ -16,7 +16,7 @@
 }
 
 .tools {
-    background-color: var(--color-secondary);
+    background-color: black;
     border-radius: var(--border-radius);
     padding: 15px;
     margin-bottom: 5px;
@@ -127,7 +127,7 @@ div.card:hover .cover {
 div.card .cover {
     transition: .7s ease;
     cursor: pointer;
-    background-color: var(--color-secondary);
+    background-color: #0056b3;
     opacity: 0;
     width: 100%;
     height: 100%;
