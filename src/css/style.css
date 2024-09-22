@@ -13,6 +13,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Nunito';
+    color: var(--color-text);
 }
 
 .tools {
@@ -24,10 +25,6 @@
 
 .first {
     margin-left: 0px !important;
-}
-
-.text-color {
-    color: var(--color-text);
 }
 
 div.line {
