@@ -2,7 +2,7 @@
 
 :root {
     --color-primary: #14213d;
-    --color-yellow: #fca311;
+    --color-secondary: #fff;
     --color-text: #fff;
 
     --border-radius: .25rem;
@@ -16,7 +16,7 @@
 }
 
 .tools {
-    background-color: var(--color-yellow);
+    background-color: var(--color-secondary);
     border-radius: var(--border-radius);
     padding: 15px;
     margin-bottom: 5px;
@@ -50,7 +50,7 @@ div.line hr {
     position: fixed;
     bottom: 0;
     right: 0;
-    background-color: var(--color-yellow);
+    background-color: var(--color-secondary);
     transform: rotate(-90deg);
     border: 0;
     border-radius: var(--border-radius);
@@ -73,7 +73,7 @@ nav.navbar {
 }
 
 nav.navbar a.nav-link {
-    color: var(--color-yellow) !important;
+    color: var(--color-secondary) !important;
     font-weight: bold;
 }
 
@@ -111,8 +111,8 @@ img.img-thumbnail {
     padding: 15px 25px;
     position: relative;
     top: 20px;
-    color: var(--color-yellow);
-    border: 2px solid var(--color-yellow);
+    color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
     background-color: var(--color-primary);
 }
 
@@ -148,7 +148,7 @@ div.card:hover .cover {
 div.card .cover {
     transition: .7s ease;
     cursor: pointer;
-    background-color: var(--color-yellow);
+    background-color: var(--color-secondary);
     opacity: 0;
     width: 100%;
     height: 100%;
@@ -255,7 +255,7 @@ div.icons {
 }
 
 div.icons a {
-    color: var(--color-yellow);
+    color: var(--color-secondary);
     margin: 40px 20px;
 }
 
@@ -288,6 +288,7 @@ div .icon-facebook {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 10px 18px;
+    filter: grayscale(1);
 }
 
 div .icon-linkedin {
@@ -295,6 +296,7 @@ div .icon-linkedin {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 10px 18px;
+    filter: grayscale(1);
 }
 
 div .icon-github {
@@ -302,6 +304,7 @@ div .icon-github {
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 10px 18px;
+    filter: grayscale(1);
 }
 
 div .icon-link {
@@ -318,6 +321,7 @@ div .icon-link {
     padding: 10px;
     position: relative;
     bottom: -10px;
+    filter: invert(1);
 }
 
 /* ------------------------------------------ */
