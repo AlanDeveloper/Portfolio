@@ -348,10 +348,6 @@ footer {
         margin: auto;
     }
 
-    .card-body, nav.navbar.navbar-expand-lg {
-        padding: 1.25rem 0 !important;
-    }
-
     h3.title-name {
         text-align: center;
         border-bottom: none;
@@ -367,6 +363,11 @@ footer {
     }
 }
 @media (max-width: 500px) {
+    .technologies ul {
+        display: initial;
+        margin: 10px;
+    }
+
     .tools {
         flex-grow: 1;
         text-align: center;
