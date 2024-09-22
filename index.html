@@ -7,79 +7,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/grid.css">
+    <link rel="stylesheet" href="src/css/timeline.css">
     <link rel="stylesheet" href="src/css/style.css">
     <title>Portfolio</title>
-    <style>    
-        .timeline {
-            position: relative;
-            width: 100%;
-            max-width: 800px;
-            margin: auto;
-            padding: 10px;
-        }
-    
-        .timeline-line {
-            position: absolute;
-            left: 50%;
-            height: 100%;
-            width: 2px;
-            background-color: #ccc;
-            background: repeating-linear-gradient(
-                to bottom,
-                #ccc,
-                #ccc 10px,
-                transparent 10px,
-                transparent 20px
-            );
-            transform: translateX(-50%);
-        }
-    
-        .event {
-            margin-bottom: 40px;
-            padding: 10px;
-            color: var(--color-secondary);
-            display: grid;
-            grid-template-columns: 1fr 15px 1fr;
-            align-items: center;
-        }
-
-        .point {
-            width: 15px;
-            height: 15px;
-            background-color: white;
-            border-radius: 50%;
-            z-index: 5;
-        }
-    
-        .event-left {
-            left: 0;
-            text-align: right;
-        }
-
-        .event-left p {
-            margin: 0px;
-            padding-right: 20px;
-        }
-        
-        .event-right {
-            left: 50%;
-            text-align: left;
-            padding-left: 20px;
-        }
-
-        .event-right p {
-            margin: 0px;
-        }
-
-        .text {
-            font-size: .9rem;
-        }
-    
-        .year {
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-    </style>
 </head>
 <body>
     <header class="navbar-dark" id="top">
