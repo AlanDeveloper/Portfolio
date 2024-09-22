@@ -290,13 +290,6 @@ div .icon-phone {
     background-size: 100%;
 }
 
-div .icon-link {
-    background: url(../assets/icons/link.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding: 10px 18px;
-}
-
 .icon-arrow {
     background: url(../assets/icons/arrow.svg);
     background-repeat: no-repeat;

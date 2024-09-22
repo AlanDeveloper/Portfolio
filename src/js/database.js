@@ -14,7 +14,7 @@ function modal(id) {
     document.querySelector('.carousel-inner').innerHTML = response;
 
     response = '';
-    response += '<h4 style="margin: 0px;">' + projects[id].name + '</h4>';
+    response += '<h4 style="margin: 0px;">' + projects[id].name + '<a href="' + projects[id].linkOnline + '" target="_blank" style="padding: 10px;"><i class="fas fa-link"></i></a></h4>';
     response += '<div class="descrip"><p>' + projects[id].description_large + '</p>';
     response += '<div class="mt-3">';
     for (let i = 0; i < projects[id].linguagens.length; i++) {
@@ -22,8 +22,6 @@ function modal(id) {
     }
     response += '</div>';
     response += '<div class="mt-4" style="display:flex;justify-content: center;">';
-    response += '<a href="' + projects[id].link + '" target="_blank" style="padding: 10px;padding-left: 0px;"><i class="icon-github"></i></a>';
-    response += '<a href="' + projects[id].linkOnline + '" target="_blank" style="padding: 10px;"><i class="icon-link"></i></a></div>';
     document.querySelector('div.modal-footer').innerHTML = response;
 }
 
@@ -44,7 +42,7 @@ const database = {
                 "src/assets/img/book-point/image_9.png",
                 "src/assets/img/book-point/image_10.png"
             ],
-            "description_large": "Um projeto de livraria online, para encerramento do 3° ano no IFRS, remodelado em 2020.",
+            "description_large": "An online bookstore project, for the completion of the 3rd year at IFRS, redesigned in 2020.",
             "linguagens": ["PHP", "PostgresSQL", "Materialize"],
             "link": "https://github.com/AlanDeveloper/Book-Point",
             "linkOnline": "https://bk-point.herokuapp.com/"
@@ -58,7 +56,7 @@ const database = {
                 "src/assets/img/ds-deliver/image_3.png",
                 "src/assets/img/ds-deliver/image_4.png"
             ],
-            "description_large": "Projeto desenvolvido para complementar meus conhecimentos sobre React, java e subir um site para nuvem, através da 2ª ed. da Semana DevSuperior",
+            "description_large": "Project developed to enhance my knowledge of React, Java, and deploying a website to the cloud, as part of the 2nd edition of the DevSuperior Week.",
             "linguagens": ["Java", "Typescript", "React Native", "Spring Boot", "React JS"],
             "link": "https://github.com/AlanDeveloper/DS_Delivery",
             "linkOnline": "https://delivery-sds2.netlify.app/"
@@ -73,7 +71,7 @@ const database = {
                 "src/assets/img/quiz/image_4.png",
                 "src/assets/img/quiz/image_5.png"
             ],
-            "description_large": "Projeto desenvolvido durante a imersão React Next JS da Alura, com intuito de aprender algum conhecimento em Next JS.",
+            "description_large": "Project developed during the React Next.js immersion at Alura, aimed at gaining knowledge in Next.js.",
             "linguagens": ["Next JS", "ReactJS"],
             "link": "https://github.com/AlanDeveloper/Quiz",
             "linkOnline": "https://quiz.alandeveloper.vercel.app"
