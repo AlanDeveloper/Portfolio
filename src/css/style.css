@@ -627,6 +627,7 @@ footer {
 
     .tech-categories {
         gap: 2rem;
+        grid-template-columns: 1fr;
     }
 
     .tech-category {
