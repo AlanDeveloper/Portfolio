@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Desenvolvedor Full Stack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e27;
+        }
+
+        .banner {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 50%, #1e293b 100%);
+            width: 100%;
+            padding: 60px 80px;
+            position: relative;
+            overflow: hidden;
+            min-height: 300px;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .banner-content {
+            max-width: 1600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        h1 .highlight {
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .tech-line {
+            color: #a5b4fc;
+            font-size: 1.15rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        .contact-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            color: #cbd5e1;
+            font-size: 1.05rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-icon {
+            color: #6366f1;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Desenvolvedor <span class="highlight">Web Full Stack</span></h1>
+            <p class="subtitle">PHP & Laravel | Nível Pleno</p>
+    
+            <div class="contact-section">
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <span>(53) 99123-6244</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <span>alanssantos32@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
