@@ -1,18 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const projects = [
-        {
-            title: 'Portfolio Website',
-            description: 'Personal portfolio website built with HTML, CSS and JavaScript.',
-            image: 'src/assets/img/projects/portfolio.jpg',
-            github: 'https://github.com/AlanDeveloper/Portfolio',
-            live: 'https://alandeveloper.github.io/Portfolio'
-        },
-    ];
+document.addEventListener("DOMContentLoaded", () => {
+  const projects = [
+    {
+      title: "Portfolio Website",
+      description:
+        "Site de portfólio pessoal construído com HTML, CSS e JavaScript.",
+      image: "src/assets/img/projects/portfolio.png",
+      github: "https://github.com/AlanDeveloper/Portfolio",
+      live: "https://alandeveloper.com.br/",
+    },
+    {
+      title: "Kicks",
+      description:
+        "Loja virtual de sneakers com carrinho de compras, gerenciamento de estado com Pinia e interface responsiva. Desenvolvido com Vue 3, TypeScript e Tailwind CSS.",
+      image: "src/assets/img/projects/kicks.png",
+      github: "https://github.com/AlanDeveloper/kicks",
+      live: "https://kicks.alandeveloper.com.br/",
+    },
+  ];
 
-    const projectGrid = document.querySelector('.project-grid');
+  const projectGrid = document.querySelector(".project-grid");
 
-    projects.forEach(project => {
-        const projectCard = `
+  projects.forEach((project) => {
+    const projectCard = `
             <div class="project-card" data-aos="fade-up">
                 <div class="project-image">
                     <img src="${project.image}" alt="${project.title}">
@@ -30,12 +39,12 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
 
-        projectGrid.innerHTML += projectCard;
-    });
+    projectGrid.innerHTML += projectCard;
+  });
 
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 100
-    });
+  AOS.init({
+    duration: 1000,
+    once: true,
+    offset: 100,
+  });
 });
