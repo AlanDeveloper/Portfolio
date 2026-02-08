@@ -35,7 +35,15 @@
     }
   },
   "projects": {
-    "title": "Featured Projects"
+    "title": "Featured Projects",
+    "portfolio": {
+      "title": "Portfolio Website",
+      "description": "Personal portfolio website built with HTML, CSS and JavaScript."
+    },
+    "kicks": {
+      "title": "Kicks",
+      "description": "Sneaker e-commerce store with shopping cart, state management with Pinia and responsive interface. Built with Vue 3, TypeScript and Tailwind CSS."
+    }
   },
   "about": {
     "title": "About Me",

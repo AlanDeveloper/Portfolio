@@ -35,7 +35,15 @@
     }
   },
   "projects": {
-    "title": "Projetos em Destaque"
+    "title": "Projetos em Destaque",
+    "portfolio": {
+      "title": "Portfolio Website",
+      "description": "Site de portfólio pessoal construído com HTML, CSS e JavaScript."
+    },
+    "kicks": {
+      "title": "Kicks",
+      "description": "Loja virtual de sneakers com carrinho de compras, gerenciamento de estado com Pinia e interface responsiva. Desenvolvido com Vue 3, TypeScript e Tailwind CSS."
+    }
   },
   "about": {
     "title": "Sobre Mim",

@@ -1,17 +1,17 @@
+let currentTranslations = {};
+
 async function switchLanguage(lang) {
   try {
     const response = await fetch("/src/lang/" + lang + ".json");
     if (!response.ok)
       throw new Error(`Erro ao carregar o arquivo: ${lang}.json`);
-
-    const translations = await response.json();
+    currentTranslations = await response.json();
 
     document.querySelectorAll("[data-i18n]").forEach((element) => {
       const key = element.getAttribute("data-i18n");
       const translation = key
         .split(".")
-        .reduce((obj, i) => (obj ? obj[i] : null), translations);
-
+        .reduce((obj, i) => (obj ? obj[i] : null), currentTranslations);
       if (translation) {
         if (element.tagName === "UL" || element.tagName === "P") {
           element.innerHTML = translation;
@@ -21,9 +21,12 @@ async function switchLanguage(lang) {
       }
     });
 
+    if (typeof renderProjects === "function") {
+      renderProjects();
+    }
+
     localStorage.setItem("preferredLang", lang);
     document.documentElement.lang = lang;
-
     document
       .querySelectorAll(".lang-btn")
       .forEach((btn) => btn.classList.remove("active"));
