@@ -38,7 +38,7 @@ html {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--color-bg);
     color: var(--color-text);
     line-height: 1.6;
@@ -285,7 +285,7 @@ body {
 }
 
 .image-wrapper::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     left: 20px;
@@ -318,6 +318,7 @@ body {
     border-radius: 1rem;
     padding: 1.5rem;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -677,7 +678,7 @@ footer {
 }
 
 .education-item::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -710,7 +711,7 @@ footer {
 }
 
 .education-period::before {
-    content: '';
+    content: "";
     display: inline-block;
     width: 8px;
     height: 8px;
@@ -728,7 +729,7 @@ footer {
 }
 
 .education-institution::before {
-    content: '📍';
+    content: "📍";
     font-size: 1.2rem;
 }
 

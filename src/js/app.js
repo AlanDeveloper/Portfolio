@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   projects.forEach((project) => {
     const projectCard = `
-            <div class="project-card" data-aos="fade-up">
+            <div class="project-card" data-aos="fade-up" data-link="${project.live}">
                 <div class="project-image">
                     <img src="${project.image}" alt="${project.title}">
                 </div>
@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
 
     projectGrid.innerHTML += projectCard;
+  });
+
+  document.querySelectorAll(".project-card").forEach((card) => {
+    card.addEventListener("click", () => {
+      const link = card.dataset.link;
+      window.open(link, "_blank");
+    });
   });
 
   AOS.init({
