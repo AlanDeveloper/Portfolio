@@ -54,4 +54,21 @@ document.addEventListener("DOMContentLoaded", () => {
     once: true,
     offset: 100,
   });
+
+  document.querySelectorAll(".read-more-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const details = btn.nextElementSibling;
+      const isOpen = details.style.maxHeight;
+
+      const isEnglish = document.getElementById("body-en");
+
+      if (isOpen) {
+        details.style.maxHeight = null;
+        btn.textContent = isEnglish ? "Read more" : "Ler mais";
+      } else {
+        details.style.maxHeight = details.scrollHeight + "px";
+        btn.textContent = isEnglish ? "Read less" : "Ler menos";
+      }
+    });
+  });
 });
