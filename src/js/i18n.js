@@ -50,11 +50,15 @@ async function switchLanguage(lang) {
 }
 
 window.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("preferredLang") || DEFAULT_LANG;
+  const browserLang = navigator.language.split("-")[0];
+  const savedLang =
+    localStorage.getItem("preferredLang") || browserLang || DEFAULT_LANG;
 
   if (savedLang !== DEFAULT_LANG) {
     switchLanguage(savedLang);
   } else {
     document.getElementById(`btn-${DEFAULT_LANG}`)?.classList.add("active");
   }
+
+  switchLanguage(langToUse);
 });
