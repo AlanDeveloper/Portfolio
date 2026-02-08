@@ -1,23 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const projects = [
-    {
-      title: "Portfolio Website",
-      description:
-        "Site de portfólio pessoal construído com HTML, CSS e JavaScript.",
-      image: "src/assets/img/projects/portfolio.png",
-      github: "https://github.com/AlanDeveloper/Portfolio",
-      live: "https://alandeveloper.com.br/",
-    },
-    {
-      title: "Kicks",
-      description:
-        "Loja virtual de sneakers com carrinho de compras, gerenciamento de estado com Pinia e interface responsiva. Desenvolvido com Vue 3, TypeScript e Tailwind CSS.",
-      image: "src/assets/img/projects/kicks.png",
-      github: "https://github.com/AlanDeveloper/kicks",
-      live: "https://kicks.alandeveloper.com.br/",
-    },
-  ];
-
   const projectGrid = document.querySelector(".project-grid");
 
   projects.forEach((project) => {
@@ -38,14 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
         `;
-
     projectGrid.innerHTML += projectCard;
   });
 
   document.querySelectorAll(".project-card").forEach((card) => {
     card.addEventListener("click", () => {
-      const link = card.dataset.link;
-      window.open(link, "_blank");
+      window.open(card.dataset.link, "_blank");
     });
   });
 
@@ -59,7 +38,6 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const details = btn.nextElementSibling;
       const isOpen = details.style.maxHeight;
-
       const isEnglish = document.getElementById("body-en");
 
       if (isOpen) {
