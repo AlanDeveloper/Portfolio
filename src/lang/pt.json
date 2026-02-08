@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Início",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "about": "Sobre"
+  },
+  "hero": {
+    "greeting": "Olá! Eu sou",
+    "name": "Alan Santos",
+    "role": "Desenvolvedor de Software",
+    "description": "Sou especialista em construir e projetar experiências digitais excepcionais. Atualmente focado em criar arquiteturas de backend escaláveis e produtos centrados no usuário.",
+    "cta": "Ver Projetos",
+    "whatsapp": "Vamos conversar no WhatsApp →"
+  },
+  "tech": {
+    "title": "Tecnologias",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "db_tools": "Banco de Dados e Ferramentas"
+  },
+  "experience": {
+    "title": "Experiência Profissional",
+    "job_role": "Desenvolvedor Web Full Stack Pleno",
+    "company": "hLiberty · Remoto",
+    "period": "Mar 2022 — Presente",
+    "summary": "Atuando no desenvolvimento, manutenção e evolução de sistemas web em produção, com forte foco em backend, infraestrutura e qualidade de código.",
+    "read_more": "Ler mais",
+    "details": {
+      "item1": "Responsável por pipelines de CI/CD, controle de versão e code reviews.",
+      "item2": "Manutenção e monitoramento de servidores Linux (Docker, Nginx).",
+      "item3": "Desenvolvimento de dashboards internos e integrações de sistemas.",
+      "item4": "Participação ativa em decisões técnicas e mentoria de desenvolvedores juniores.",
+      "item5": "Stack principal: Laravel, PHP, PostgreSQL, MySQL, Redis e Docker."
+    }
+  },
+  "projects": {
+    "title": "Projetos em Destaque"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "highlight": "Apaixonado por criar soluções web de impacto.",
+    "description": "Moro em Pelotas e tenho mais de 4 anos de experiência construindo experiências digitais excepcionais. Minha especialidade é unir a lógica robusta do backend com interfaces frontend focadas na experiência do usuário."
+  },
+  "education": {
+    "title": "Jornada Educacional",
+    "course1": "Engenharia de Computação",
+    "period1": "2020 - Presente",
+    "inst1": "UFPEL Campus Anglo",
+    "course2": "Técnico em Informática para Internet",
+    "period2": "2016 - 2019",
+    "inst2": "IFRS Campus Rio Grande"
+  },
+  "footer": {
+    "description": "Desenvolvedor de Software focado em construir soluções digitais criativas e eficientes.",
+    "links_title": "Links Rápidos",
+    "contact_title": "Contato",
+    "location": "Pelotas - RS, Brasil",
+    "rights": "© 2026 Alan Santos. Todos os direitos reservados."
+  }
+}

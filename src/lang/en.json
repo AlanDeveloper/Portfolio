@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "home": "Home",
+    "experience": "Experience",
+    "projects": "Projects",
+    "about": "About"
+  },
+  "hero": {
+    "greeting": "Hi there! I'm",
+    "name": "Alan Santos",
+    "role": "Software Developer",
+    "description": "I specialize in building and designing exceptional digital experiences. Currently focused on creating scalable backend architectures and human-centered products.",
+    "cta": "View Projects",
+    "whatsapp": "Let’s talk on WhatsApp →"
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "db_tools": "Database & Tools"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "job_role": "Mid-level Full Stack Web Developer",
+    "company": "hLiberty · Remote",
+    "period": "Mar 2022 — Present",
+    "summary": "Working on the development, maintenance, and evolution of production web systems, with a strong focus on backend, infrastructure, and code quality.",
+    "read_more": "Read more",
+    "details": {
+      "item1": "Responsible for CI/CD pipelines, version control, and code reviews.",
+      "item2": "Maintenance and monitoring of Linux servers (Docker, Nginx).",
+      "item3": "Development of internal dashboards and system integrations.",
+      "item4": "Active participation in technical decisions and mentoring junior developers.",
+      "item5": "Main stack: Laravel, PHP, PostgreSQL, MySQL, Redis, and Docker."
+    }
+  },
+  "projects": {
+    "title": "Featured Projects"
+  },
+  "about": {
+    "title": "About Me",
+    "highlight": "Crafting high-impact web solutions with precision.",
+    "description": "I'm a developer from Pelotas with over 4 years of experience delivering exceptional digital products. My focus is on building scalable backend architectures combined with intuitive, user-first frontend experiences."
+  },
+  "education": {
+    "title": "Education Journey",
+    "course1": "Computer Engineering",
+    "period1": "2020 - Present",
+    "inst1": "UFPEL Anglo Campus",
+    "course2": "Information Technology Technician",
+    "period2": "2016 - 2019",
+    "inst2": "IFRS Rio Grande Campus"
+  },
+  "footer": {
+    "description": "Software Developer focused on building creative and efficient digital solutions.",
+    "links_title": "Quick Links",
+    "contact_title": "Contact Info",
+    "location": "Pelotas - RS, Brazil",
+    "rights": "© 2026 Alan Santos. All rights reserved."
+  }
+}
