@@ -42,6 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
     duration: 1000,
     once: true,
     offset: 100,
+    disableMutationObserver: true,
+    debounceDelay: 50,
   });
 
   document.querySelectorAll(".read-more-btn").forEach((btn) => {
