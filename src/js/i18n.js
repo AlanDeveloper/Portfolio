@@ -59,6 +59,4 @@ window.addEventListener("DOMContentLoaded", () => {
   } else {
     document.getElementById(`btn-${DEFAULT_LANG}`)?.classList.add("active");
   }
-
-  switchLanguage(langToUse);
 });
