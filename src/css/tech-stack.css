@@ -1,0 +1,112 @@
+.tech-stack {
+    margin: 4rem 0;
+    padding: 3rem;
+    backdrop-filter: blur(10px);
+}
+
+.tech-stack h3 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, var(--color-primary), #818cf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tech-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+.tech-category {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 16px;
+}
+
+.tech-category h4 {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    margin-bottom: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.tech-item {
+    position: relative;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.tech-item::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem 1rem;
+    background: var(--color-card);
+    color: var(--color-text);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: -45px;
+}
+
+@media (max-width: 768px) {
+    .tech-stack {
+        padding: 2rem 1rem;
+    }
+
+    .tech-categories {
+        gap: 2rem;
+        grid-template-columns: 1fr;
+    }
+
+    .tech-category {
+        min-width: 100%;
+    }
+
+    .tech-list {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 1rem;
+    }
+
+    .tech-item {
+        font-size: 2rem;
+        width: 50px;
+        height: 50px;
+    }
+}
