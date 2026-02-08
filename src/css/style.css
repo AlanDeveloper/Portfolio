@@ -384,6 +384,30 @@ body {
     text-align: center;
 }
 
+.hero-contact a {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.hero-contact a:hover {
+    opacity: 1;
+}
+
+.hero-contact {
+    margin-top: 14px;
+}
+
+.hero-contact a {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    text-decoration: underline;
+}
+
+.hero-contact a:hover {
+    opacity: 1;
+}
+
 .contact-item {
     display: flex;
     align-items: center;
