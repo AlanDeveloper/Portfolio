@@ -16,10 +16,10 @@ function renderProjects() {
         <h3 class="project-title">${translation.title}</h3>
         <p class="project-description">${translation.description}</p>
         <div class="project-links">
-          <a href="${project.github}" target="_blank">
+          <a href="${project.github}" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-github"></i>
           </a>
-          <a href="${project.live}" target="_blank">
+          <a href="${project.live}" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
           </a>
         </div>

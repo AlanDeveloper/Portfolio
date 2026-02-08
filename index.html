@@ -3,20 +3,54 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Alan Santos - Software Developer from Pelotas, Brazil. Specializing in full-stack web development with 4+ years of experience in Laravel, PHP, Vue.js, and scalable backend architectures."
+        />
         <title>Alan Santos | Developer</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+
         <link
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
+
         <link rel="stylesheet" href="src/css/main.css" />
+
         <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+            rel="preload"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
         />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            />
+        </noscript>
+
+        <link
+            rel="preload"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+            as="style"
+            onload="
+                this.onload = null;
+                this.rel = 'stylesheet';
+            "
+        />
+        <noscript>
+            <link
+                rel="stylesheet"
+                href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+            />
+        </noscript>
     </head>
 
     <body>
@@ -83,6 +117,7 @@
                                 href="https://wa.me/5553991236244"
                                 target="_blank"
                                 data-i18n="hero.whatsapp"
+                                rel="noopener noreferrer"
                             >
                                 Looking for a professional? Contact me on
                                 WhatsApp to discuss opportunities.
@@ -340,6 +375,7 @@
                                 href="https://github.com/alandeveloper"
                                 target="_blank"
                                 aria-label="GitHub"
+                                rel="noopener noreferrer"
                             >
                                 <i class="fab fa-github"></i>
                             </a>
@@ -347,12 +383,14 @@
                                 href="https://www.linkedin.com/in/alan-santos-20659a190/"
                                 target="_blank"
                                 aria-label="LinkedIn"
+                                rel="noopener noreferrer"
                             >
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                             <a
                                 href="mailto:alanssantos32@gmail.com"
                                 aria-label="Email"
+                                rel="noopener noreferrer"
                             >
                                 <i class="fas fa-envelope"></i>
                             </a>
