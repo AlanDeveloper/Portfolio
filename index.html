@@ -12,7 +12,7 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         />
-        <link rel="stylesheet" href="src/css/style.css" />
+        <link rel="stylesheet" href="src/css/main.css" />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -20,854 +20,403 @@
     </head>
 
     <body>
-        <div id="body-en">
-            <nav class="navbar">
-                <div class="container">
-                    <a href="#" class="logo">Alan<span>.dev</span></a>
-                    <div class="nav-links">
-                        <a href="#home" class="active">Home</a>
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Alan<span>.dev</span></a>
+
+                <div class="nav-links">
+                    <a href="#home" class="active" data-i18n="nav.home">Home</a>
+                    <a href="#experience" data-i18n="nav.experience"
+                        >Experience</a
+                    >
+                    <a href="#projects" data-i18n="nav.projects">Projects</a>
+                    <a href="#about" data-i18n="nav.about">About</a>
+                </div>
+
+                <div class="language-switcher">
+                    <button
+                        onclick="switchLanguage('en')"
+                        id="btn-en"
+                        class="lang-btn"
+                    >
+                        EN
+                    </button>
+                    <span class="divider">/</span>
+                    <button
+                        onclick="switchLanguage('pt')"
+                        id="btn-pt"
+                        class="lang-btn"
+                    >
+                        PT
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text" data-aos="fade-right">
+                        <span class="greeting" data-i18n="hero.greeting"
+                            >Hi there! I'm</span
+                        >
+                        <h1 data-i18n="hero.name">Alan Santos</h1>
+                        <h2 class="role" data-i18n="hero.role">
+                            Software Developer
+                        </h2>
+                        <p class="description" data-i18n="hero.description">
+                            I specialize in building and designing exceptional
+                            digital experiences. Currently focused on creating
+                            scalable backend architectures and human-centered
+                            products.
+                        </p>
+                        <div class="cta-buttons">
+                            <a
+                                href="#projects"
+                                class="btn primary"
+                                data-i18n="hero.cta"
+                                >View Projects</a
+                            >
+                        </div>
+                        <p class="hero-contact">
+                            <a
+                                href="https://wa.me/5553991236244"
+                                target="_blank"
+                                data-i18n="hero.whatsapp"
+                            >
+                                Let’s talk on WhatsApp →
+                            </a>
+                        </p>
+                    </div>
+                    <div class="hero-image" data-aos="fade-left">
+                        <div class="image-wrapper">
+                            <img
+                                src="src/assets/img/image6.jpg"
+                                alt="Alan Santos"
+                            />
+                            <div class="image-bg"></div>
+                        </div>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </section>
 
-            <section id="home" class="hero">
-                <div class="container">
-                    <div class="hero-content">
-                        <div class="hero-text" data-aos="fade-right">
-                            <span class="greeting">Hi there! I'm</span>
-                            <h1>Alan Santos</h1>
-                            <h2 class="role">Software Developer</h2>
-                            <p class="description">
-                                I specialize in building and designing
-                                exceptional digital experiences. Currently
-                                focused on creating accessible, human-centered
-                                products.
-                            </p>
-                            <div class="cta-buttons">
-                                <a href="#projects" class="btn primary"
-                                    >View Projects</a
-                                >
+        <section class="tech-stack">
+            <div class="container">
+                <h2 class="section-title" data-i18n="tech.title">Tech Stack</h2>
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <h4 data-i18n="tech.frontend">Frontend</h4>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tooltip="HTML5">
+                                <i class="devicon-html5-plain colored"></i>
                             </div>
-                            <p class="hero-contact">
-                                <a
-                                    href="https://wa.me/5553991236244?text=Hi%20Alan!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch."
-                                    target="_blank"
-                                >
-                                    Let’s talk on WhatsApp →
-                                </a>
-                            </p>
+                            <div class="tech-item" data-tooltip="CSS3">
+                                <i class="devicon-css3-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="JavaScript">
+                                <i class="devicon-javascript-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="JQuery">
+                                <i class="devicon-jquery-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Vue">
+                                <i class="devicon-vuejs-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Tailwind CSS">
+                                <i
+                                    class="devicon-tailwindcss-plain colored"
+                                ></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Bootstrap">
+                                <i class="devicon-bootstrap-plain colored"></i>
+                            </div>
                         </div>
-                        <div class="hero-image" data-aos="fade-left">
-                            <div class="image-wrapper">
-                                <img
-                                    src="src/assets/img/image6.jpg"
-                                    alt="Alan Santos"
-                                />
-                                <div class="image-bg"></div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h4 data-i18n="tech.backend">Backend</h4>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tooltip="PHP">
+                                <i class="devicon-php-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Laravel">
+                                <i class="devicon-laravel-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Node.js">
+                                <i class="devicon-nodejs-plain colored"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tech-category">
+                        <h4 data-i18n="tech.db_tools">Database & Tools</h4>
+                        <div class="tech-list">
+                            <div class="tech-item" data-tooltip="MySQL">
+                                <i class="devicon-mysql-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="PostgreSQL">
+                                <i class="devicon-postgresql-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Docker">
+                                <i class="devicon-docker-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Git">
+                                <i class="devicon-git-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Gitlab CI/CD">
+                                <i class="devicon-gitlab-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Linux">
+                                <i class="devicon-linux-plain"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="NGINX">
+                                <i class="devicon-nginx-plain colored"></i>
+                            </div>
+                            <div class="tech-item" data-tooltip="Postman">
+                                <i class="devicon-postman-plain colored"></i>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="about" class="about">
-                <div class="container">
-                    <h2 class="section-title">About Me</h2>
-                    <div class="about-content">
-                        <div class="about-text" data-aos="fade-right">
-                            <p class="highlight">
-                                Passionate about creating impactful web
-                                solutions.
-                            </p>
-                            <p>
-                                With over 4 years of experience in web
-                                development, I've had the privilege of working
-                                on diverse projects that have shaped my
-                                expertise in both frontend and backend
-                                technologies.
-                            </p>
-                            <p>
-                                I specialize in building and designing
-                                exceptional digital experiences. Currently
-                                working as a Mid level developer at hLiberty,
-                                where I mentor junior developers and focus on
-                                creating accessible, human-centered products.
-                            </p>
-                            <section class="professional-experience">
-                                <h3 class="section-subtitle">
-                                    Professional Experience
-                                </h3>
+        <section id="experience" class="professional-experience">
+            <div class="container">
+                <h2 class="section-title" data-i18n="experience.title">
+                    Professional Experience
+                </h2>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h4 data-i18n="experience.job_role">
+                                Mid-level Full Stack Web Developer
+                            </h4>
+                            <span class="company" data-i18n="experience.company"
+                                >hLiberty · Remote</span
+                            >
+                        </div>
+                        <span class="period" data-i18n="experience.period"
+                            >Mar 2022 — Present</span
+                        >
+                    </div>
+                    <p
+                        class="experience-summary"
+                        data-i18n="experience.summary"
+                    >
+                        Working on the development, maintenance, and evolution
+                        of production web systems, with a strong focus on
+                        backend, infrastructure, and code quality.
+                    </p>
+                    <button
+                        class="read-more-btn"
+                        data-i18n="experience.read_more"
+                    >
+                        Read more
+                    </button>
+                    <div class="experience-details">
+                        <ul>
+                            <li data-i18n="experience.details.item1">
+                                Responsible for CI/CD pipelines, version
+                                control, and code reviews.
+                            </li>
+                            <li data-i18n="experience.details.item2">
+                                Maintenance and monitoring of Linux servers
+                                (Docker, Nginx).
+                            </li>
+                            <li data-i18n="experience.details.item3">
+                                Development of internal dashboards and system
+                                integrations.
+                            </li>
+                            <li data-i18n="experience.details.item4">
+                                Active participation in technical decisions and
+                                mentoring junior developers.
+                            </li>
+                            <li data-i18n="experience.details.item5">
+                                Main stack: Laravel, PHP, PostgreSQL, MySQL,
+                                Redis, and Docker.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                                <div class="experience-card">
-                                    <div class="experience-header">
-                                        <div>
-                                            <h4>
-                                                Mid-level Full Stack Web
-                                                Developer
-                                            </h4>
-                                            <span class="company"
-                                                >hLiberty · Remote</span
-                                            >
-                                        </div>
-                                        <span class="period"
-                                            >Mar 2022 — Present</span
-                                        >
-                                    </div>
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title" data-i18n="projects.title">
+                    Featured Projects
+                </h2>
+                <div class="project-grid"></div>
+            </div>
+        </section>
 
-                                    <p class="experience-summary">
-                                        Working on the development, maintenance,
-                                        and evolution of production web systems,
-                                        with a strong focus on backend,
-                                        infrastructure, and code quality.
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title" data-i18n="about.title">About Me</h2>
+                <div>
+                    <div class="about-text" data-aos="fade-right">
+                        <p class="highlight" data-i18n="about.highlight">
+                            Crafting high-impact web solutions with precision.
+                        </p>
+                        <p data-i18n="about.description">
+                            I'm a developer from Pelotas with over 4 years of
+                            experience delivering exceptional digital products.
+                            My focus is on building scalable backend
+                            architectures combined with intuitive, user-first
+                            frontend experiences.
+                        </p>
+
+                        <div class="education-section" data-aos="fade-up">
+                            <h2
+                                class="section-title"
+                                data-i18n="education.title"
+                            >
+                                Education Journey
+                            </h2>
+                            <div class="education-timeline">
+                                <div class="education-item" data-aos="fade-up">
+                                    <h4
+                                        class="education-title"
+                                        data-i18n="education.course1"
+                                    >
+                                        Computer Engineering
+                                    </h4>
+                                    <span
+                                        class="education-period"
+                                        data-i18n="education.period1"
+                                        >2020 - Present</span
+                                    >
+                                    <p
+                                        class="education-institution"
+                                        data-i18n="education.inst1"
+                                    >
+                                        UFPEL Anglo Campus
                                     </p>
-
-                                    <button class="read-more-btn">
-                                        Read more
-                                    </button>
-
-                                    <div class="experience-details">
-                                        <ul>
-                                            <li>
-                                                Responsible for CI/CD pipelines,
-                                                version control, and code
-                                                reviews
-                                            </li>
-                                            <li>
-                                                Maintenance and monitoring of
-                                                Linux servers (Docker, Nginx)
-                                            </li>
-                                            <li>
-                                                Development of an internal
-                                                dashboard integrating multiple
-                                                company systems
-                                            </li>
-                                            <li>
-                                                Active participation in
-                                                technical decisions and
-                                                mentoring junior developers
-                                            </li>
-                                            <li>
-                                                Main stack: Laravel, PHP,
-                                                PostgreSQL, MySQL, Redis, and
-                                                Docker
-                                            </li>
-                                        </ul>
-                                    </div>
                                 </div>
-                            </section>
-                            <div class="education-section" data-aos="fade-up">
-                                <h3>Education Journey</h3>
-                                <div class="education-timeline">
-                                    <div
-                                        class="education-item"
-                                        data-aos="fade-up"
+                                <div
+                                    class="education-item"
+                                    data-aos="fade-up"
+                                    data-aos-delay="100"
+                                >
+                                    <h4
+                                        class="education-title"
+                                        data-i18n="education.course2"
                                     >
-                                        <h4 class="education-title">
-                                            Computer Engineering
-                                        </h4>
-                                        <span class="education-period"
-                                            >2020 - Present</span
-                                        >
-                                        <p class="education-institution">
-                                            UFPEL Anglo Campus
-                                        </p>
-                                    </div>
-
-                                    <div
-                                        class="education-item"
-                                        data-aos="fade-up"
-                                        data-aos-delay="100"
+                                        Information Technology Technician
+                                    </h4>
+                                    <span
+                                        class="education-period"
+                                        data-i18n="education.period2"
+                                        >2016 - 2019</span
                                     >
-                                        <h4 class="education-title">
-                                            Information Technology Technician
-                                        </h4>
-                                        <span class="education-period"
-                                            >2016 - 2019</span
-                                        >
-                                        <p class="education-institution">
-                                            IFRS Rio Grande Campus
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="experience-grid">
-                                <div class="experience-item">
-                                    <span class="number">4+</span>
-                                    <span class="label"
-                                        >Years of Experience</span
+                                    <p
+                                        class="education-institution"
+                                        data-i18n="education.inst2"
                                     >
-                                </div>
-                                <div class="experience-item">
-                                    <span class="number">Mid-level</span>
-                                    <span class="label"
-                                        >Software Developer</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tech-stack">
-                            <h3>Tech Stack</h3>
-                            <div class="tech-categories">
-                                <div class="tech-category">
-                                    <h4>Frontend</h4>
-                                    <div class="tech-list">
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="HTML5"
-                                        >
-                                            <i
-                                                class="devicon-html5-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="CSS3"
-                                        >
-                                            <i
-                                                class="devicon-css3-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="JavaScript"
-                                        >
-                                            <i
-                                                class="devicon-javascript-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="jQuery"
-                                        >
-                                            <i
-                                                class="devicon-jquery-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Bootstrap"
-                                        >
-                                            <i
-                                                class="devicon-bootstrap-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Tailwind"
-                                        >
-                                            <i
-                                                class="devicon-tailwindcss-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Vue"
-                                        >
-                                            <i
-                                                class="devicon-vuejs-plain colored"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tech-category">
-                                    <h4>Backend</h4>
-                                    <div class="tech-list">
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="PHP"
-                                        >
-                                            <i
-                                                class="devicon-php-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Laravel"
-                                        >
-                                            <i
-                                                class="devicon-laravel-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Redis"
-                                        >
-                                            <i
-                                                class="devicon-redis-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Postman"
-                                        >
-                                            <i
-                                                class="devicon-postman-plain colored"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tech-category">
-                                    <h4>Database & Tools</h4>
-                                    <div class="tech-list">
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="MySQL"
-                                        >
-                                            <i
-                                                class="devicon-mysql-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="PostgreSQL"
-                                        >
-                                            <i
-                                                class="devicon-postgresql-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Docker"
-                                        >
-                                            <i
-                                                class="devicon-docker-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Git"
-                                        >
-                                            <i
-                                                class="devicon-git-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Nginx"
-                                        >
-                                            <i
-                                                class="devicon-nginx-original colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="GitLab CI/CD"
-                                        >
-                                            <i
-                                                class="devicon-gitlab-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Linux"
-                                        >
-                                            <i class="devicon-linux-plain"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="projects">
-                <div class="container">
-                    <h2 class="section-title">Featured Projects</h2>
-                    <div class="project-grid"></div>
-                </div>
-            </section>
-
-            <footer>
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-section">
-                            <h4>Alan Santos</h4>
-                            <p>
-                                Software Developer focused on building creative
-                                and efficient digital solutions.
-                            </p>
-                            <div class="footer-social">
-                                <a
-                                    href="https://wa.me/5553991236244?text=Hi%20Alan!%20I%20found%20your%20portfolio%20and%20would%20like%20to%20get%20in%20touch."
-                                    target="_blank"
-                                    aria-label="WhatsApp"
-                                >
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
-                                <a
-                                    href="https://github.com/AlanDeveloper"
-                                    target="_blank"
-                                >
-                                    <i class="fab fa-github"></i>
-                                </a>
-                                <a
-                                    href="https://www.linkedin.com/in/alan-santos-20659a190"
-                                    target="_blank"
-                                >
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="mailto:alanssantos32@gmail.com">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="footer-section">
-                            <h4>Quick Links</h4>
-                            <ul class="footer-links">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#projects">Projects</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="footer-section">
-                            <h4>Contact Info</h4>
-                            <p>Pelotas - RS, Brazil</p>
-                            <p>alanssantos32@gmail.com</p>
-                        </div>
-                    </div>
-
-                    <div class="footer-bottom">
-                        <p>&copy; 2026 Alan Santos. All rights reserved.</p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <div id="body-pt">
-            <nav class="navbar">
-                <div class="container">
-                    <a href="#" class="logo">Alan<span>.dev</span></a>
-                    <div class="nav-links">
-                        <a href="#home" class="active">Início</a>
-                        <a href="#about">Sobre</a>
-                        <a href="#projects">Projetos</a>
-                    </div>
-                </div>
-            </nav>
-
-            <section id="home" class="hero">
-                <div class="container">
-                    <div class="hero-content">
-                        <div class="hero-text" data-aos="fade-right">
-                            <span class="greeting">Olá! Eu sou</span>
-                            <h1>Alan Santos</h1>
-                            <h2 class="role">Software developer</h2>
-                            <p class="description">
-                                Especializado em construir e projetar
-                                experiências digitais excepcionais. Atualmente
-                                focado em criar produtos acessíveis e centrados
-                                no usuário.
-                            </p>
-                            <div class="cta-buttons">
-                                <a href="#projects" class="btn primary"
-                                    >Ver Projetos</a
-                                >
-                            </div>
-                            <p class="hero-contact">
-                                <a
-                                    href="https://wa.me/5553991236244?text=Olá%20Alan!%20Encontrei%20seu%20portfólio%20e%20gostaria%20de%20conversar."
-                                    target="_blank"
-                                    aria-label="Contato via WhatsApp"
-                                >
-                                    Prefere WhatsApp? Vamos conversar →
-                                </a>
-                            </p>
-                        </div>
-                        <div class="hero-image" data-aos="fade-left">
-                            <div class="image-wrapper">
-                                <img
-                                    src="src/assets/img/image6.jpg"
-                                    alt="Alan Santos"
-                                />
-                                <div class="image-bg"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="about" class="about">
-                <div class="container">
-                    <h2 class="section-title">Sobre Mim</h2>
-                    <div class="about-content">
-                        <div class="about-text" data-aos="fade-right">
-                            <p class="highlight">
-                                Apaixonado por criar soluções web impactantes.
-                            </p>
-                            <p>
-                                Com mais de 4 anos de experiência em
-                                desenvolvimento web, tive o privilégio de
-                                trabalhar em projetos diversos que moldaram
-                                minha expertise tanto no frontend quanto no
-                                backend.
-                            </p>
-                            <p>
-                                Sou especialista em construir e projetar
-                                experiências digitais excepcionais. Atualmente,
-                                trabalho como desenvolvedor pleno na hLiberty,
-                                onde sou mentor de desenvolvedores juniores e me
-                                concentro na criação de produtos acessíveis e
-                                centrados no usuário.
-                            </p>
-                            <section class="professional-experience">
-                                <h3 class="section-subtitle">
-                                    Experiência Profissional
-                                </h3>
-
-                                <div class="experience-card">
-                                    <div class="experience-header">
-                                        <div>
-                                            <h4>
-                                                Desenvolvedor Web Full Stack
-                                                (Pleno)
-                                            </h4>
-                                            <span class="company"
-                                                >hLiberty · Remoto</span
-                                            >
-                                        </div>
-                                        <span class="period"
-                                            >Mar 2022 — Presente</span
-                                        >
-                                    </div>
-
-                                    <p class="experience-summary">
-                                        Atuação no desenvolvimento e manutenção
-                                        de sistemas web em produção, com foco em
-                                        backend, infraestrutura e qualidade de
-                                        código.
+                                        IFRS Rio Grande Campus
                                     </p>
-
-                                    <button class="read-more-btn">
-                                        Ler mais
-                                    </button>
-
-                                    <div class="experience-details">
-                                        <ul>
-                                            <li>
-                                                Responsável por rotinas de
-                                                CI/CD, versionamento e code
-                                                reviews
-                                            </li>
-                                            <li>
-                                                Manutenção e monitoramento de
-                                                servidores Linux (Docker, Nginx)
-                                            </li>
-                                            <li>
-                                                Desenvolvimento de painel
-                                                interno que integra múltiplos
-                                                sistemas
-                                            </li>
-                                            <li>
-                                                Participação em decisões
-                                                técnicas e mentoria de
-                                                desenvolvedores juniores
-                                            </li>
-                                            <li>
-                                                Stack principal: Laravel, PHP,
-                                                PostgreSQL, MySQL, Redis e
-                                                Docker
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </section>
-                            <div class="education-section" data-aos="fade-up">
-                                <h3>Jornada Educacional</h3>
-                                <div class="education-timeline">
-                                    <div
-                                        class="education-item"
-                                        data-aos="fade-up"
-                                    >
-                                        <h4 class="education-title">
-                                            Engenharia da Computação
-                                        </h4>
-                                        <span class="education-period"
-                                            >2020 - Presente</span
-                                        >
-                                        <p class="education-institution">
-                                            UFPEL Campus Anglo
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="education-item"
-                                        data-aos="fade-up"
-                                        data-aos-delay="100"
-                                    >
-                                        <h4 class="education-title">
-                                            Técnico em Informática
-                                        </h4>
-                                        <span class="education-period"
-                                            >2016 - 2019</span
-                                        >
-                                        <p class="education-institution">
-                                            IFRS Campus Rio Grande
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="experience-grid">
-                                <div class="experience-item">
-                                    <span class="number">4+</span>
-                                    <span class="label"
-                                        >Anos de Experiência</span
-                                    >
-                                </div>
-                                <div class="experience-item">
-                                    <span class="number">Nível Pleno</span>
-                                    <span class="label"
-                                        >Software Developer</span
-                                    >
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tech-stack">
-                            <h3>Tech Stack</h3>
-                            <div class="tech-categories">
-                                <div class="tech-category">
-                                    <h4>Frontend</h4>
-                                    <div class="tech-list">
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="HTML5"
-                                        >
-                                            <i
-                                                class="devicon-html5-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="CSS3"
-                                        >
-                                            <i
-                                                class="devicon-css3-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="JavaScript"
-                                        >
-                                            <i
-                                                class="devicon-javascript-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="jQuery"
-                                        >
-                                            <i
-                                                class="devicon-jquery-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Bootstrap"
-                                        >
-                                            <i
-                                                class="devicon-bootstrap-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Tailwind"
-                                        >
-                                            <i
-                                                class="devicon-tailwindcss-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Vue"
-                                        >
-                                            <i
-                                                class="devicon-vuejs-plain colored"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tech-category">
-                                    <h4>Backend</h4>
-                                    <div class="tech-list">
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="PHP"
-                                        >
-                                            <i
-                                                class="devicon-php-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Laravel"
-                                        >
-                                            <i
-                                                class="devicon-laravel-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Redis"
-                                        >
-                                            <i
-                                                class="devicon-redis-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Postman"
-                                        >
-                                            <i
-                                                class="devicon-postman-plain colored"
-                                            ></i>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="tech-category">
-                                    <h4>Database & Tools</h4>
-                                    <div class="tech-list">
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="MySQL"
-                                        >
-                                            <i
-                                                class="devicon-mysql-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="PostgreSQL"
-                                        >
-                                            <i
-                                                class="devicon-postgresql-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Docker"
-                                        >
-                                            <i
-                                                class="devicon-docker-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Git"
-                                        >
-                                            <i
-                                                class="devicon-git-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Nginx"
-                                        >
-                                            <i
-                                                class="devicon-nginx-original colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="GitLab CI/CD"
-                                        >
-                                            <i
-                                                class="devicon-gitlab-plain colored"
-                                            ></i>
-                                        </div>
-                                        <div
-                                            class="tech-item"
-                                            data-tooltip="Linux"
-                                        >
-                                            <i class="devicon-linux-plain"></i>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="projects" class="projects">
-                <div class="container">
-                    <h2 class="section-title">Projetos em Destaque</h2>
-                    <div class="project-grid"></div>
-                </div>
-            </section>
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Alan Santos</h4>
+                        <p data-i18n="footer.description">
+                            Software Developer focused on building creative and
+                            efficient digital solutions.
+                        </p>
+                        <div class="footer-social">
+                            <a
+                                href="https://github.com/alandeveloper"
+                                target="_blank"
+                                aria-label="GitHub"
+                            >
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a
+                                href="https://www.linkedin.com/in/alan-santos-20659a190/"
+                                target="_blank"
+                                aria-label="LinkedIn"
+                            >
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a
+                                href="mailto:alanssantos32@gmail.com"
+                                aria-label="Email"
+                            >
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a
+                                href="https://wa.me/5553991236244"
+                                target="_blank"
+                                aria-label="WhatsApp"
+                            >
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
 
-            <footer>
-                <div class="container">
-                    <div class="footer-content">
-                        <div class="footer-section">
-                            <h4>Alan Santos</h4>
-                            <p>
-                                Software developer focado em construir soluções
-                                digitais criativas e eficientes.
-                            </p>
-                            <div class="footer-social">
-                                <a
-                                    href="https://wa.me/5553991236244?text=Olá%20Alan!%20Encontrei%20seu%20portfólio%20e%20gostaria%20de%20conversar."
-                                    target="_blank"
-                                    aria-label="WhatsApp"
+                    <div class="footer-section">
+                        <h4 data-i18n="footer.links_title">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="#home" data-i18n="nav.home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#experience" data-i18n="nav.experience"
+                                    >Experience</a
                                 >
-                                    <i class="fab fa-whatsapp"></i>
-                                </a>
-                                <a
-                                    href="https://github.com/AlanDeveloper"
-                                    target="_blank"
-                                    ><i class="fab fa-github"></i
-                                ></a>
-                                <a
-                                    href="https://www.linkedin.com/in/alan-santos-20659a190"
-                                    target="_blank"
-                                    ><i class="fab fa-linkedin"></i
-                                ></a>
-                                <a href="mailto:alanssantos32@gmail.com"
-                                    ><i class="fas fa-envelope"></i
-                                ></a>
-                            </div>
-                        </div>
-                        <div class="footer-section">
-                            <h4>Links Rápidos</h4>
-                            <ul class="footer-links">
-                                <li><a href="#home">Início</a></li>
-                                <li><a href="#about">Sobre</a></li>
-                                <li><a href="#projects">Projetos</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-section">
-                            <h4>Contato</h4>
-                            <p>Pelotas - RS, Brasil</p>
-                            <p>alanssantos32@gmail.com</p>
-                        </div>
+                            </li>
+                            <li>
+                                <a href="#projects" data-i18n="nav.projects"
+                                    >Projects</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#about" data-i18n="nav.about">About</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="footer-bottom">
+
+                    <div class="footer-section">
+                        <h4 data-i18n="footer.contact_title">Contact Info</h4>
                         <p>
-                            &copy; 2026 Alan Santos. Todos os direitos
-                            reservados.
+                            <i
+                                class="fas fa-map-marker-alt"
+                                style="margin-right: 5px"
+                            ></i>
+                            <span data-i18n="footer.location"
+                                >Pelotas - RS, Brazil</span
+                            >
+                        </p>
+                        <p>
+                            <i
+                                class="fas fa-envelope"
+                                style="margin-right: 5px"
+                            ></i>
+                            <span>alanssantos32@gmail.com</span>
                         </p>
                     </div>
                 </div>
-            </footer>
-        </div>
+                <div class="footer-bottom">
+                    <p data-i18n="footer.rights">
+                        &copy; 2026 Alan Santos. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
-
-    <script>
-        const userLang = (
-            navigator.language || navigator.userLanguage
-        ).toLowerCase();
-        if (userLang.startsWith("pt")) {
-            document.getElementById("body-en").remove();
-        } else {
-            document.getElementById("body-pt").remove();
-        }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="src/js/app.js"></script>
+    <script src="src/js/projects.js"></script>
+    <script src="src/js/i18n.js"></script>
+    <script src="src/js/scripts.js"></script>
 </html>
