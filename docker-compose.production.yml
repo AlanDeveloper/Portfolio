@@ -1,8 +1,9 @@
 services:
-  portfolio:
+  app:
     image: ghcr.io/alandeveloper/portfolio:latest
-    container_name: portfolio
     restart: unless-stopped
+    mem_limit: 192m
+    cpus: 0.45
     networks:
       - traefik-network
     labels:
