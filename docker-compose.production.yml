@@ -8,8 +8,21 @@ services:
       - traefik-network
     labels:
       - "traefik.enable=true"
+
+      # Router HTTP — só redireciona para HTTPS
+      - "traefik.http.routers.portfolio-http.rule=Host(`alandeveloper.com.br`) || Host(`www.alandeveloper.com.br`)"
+      - "traefik.http.routers.portfolio-http.entrypoints=web"
+      - "traefik.http.routers.portfolio-http.middlewares=redirect-https"
+
+      # Middleware de redirect
+      - "traefik.http.middlewares.redirect-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.redirect-https.redirectscheme.permanent=true"
+
+      # Router HTTPS — serve o app de verdade
       - "traefik.http.routers.portfolio.rule=Host(`alandeveloper.com.br`) || Host(`www.alandeveloper.com.br`)"
-      - "traefik.http.routers.portfolio.entrypoints=web"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls=true"
+      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
       - "traefik.http.services.portfolio.loadbalancer.server.port=80"
 
 networks:
