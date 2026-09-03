@@ -21,17 +21,47 @@
   },
   "experience": {
     "title": "Experiência Profissional",
-    "job_role": "Desenvolvedor Web Full Stack Pleno",
-    "company": "hLiberty · Remoto",
-    "period": "Mar 2022 — Presente",
-    "summary": "Atuando no desenvolvimento, manutenção e evolução de sistemas web em produção, com forte foco em backend, infraestrutura e qualidade de código.",
-    "read_more": "Ler mais",
-    "details": {
-      "item1": "Responsável por pipelines de CI/CD, controle de versão e code reviews.",
-      "item2": "Manutenção e monitoramento de servidores Linux (Docker, Nginx).",
-      "item3": "Desenvolvimento de dashboards internos e integrações de sistemas.",
-      "item4": "Participação ativa em decisões técnicas e mentoria de desenvolvedores juniores.",
-      "item5": "Stack principal: Laravel, PHP, PostgreSQL, MySQL, Redis e Docker."
+    "hliberty": {
+      "job_role": "Desenvolvedor Web Full Stack Pleno",
+      "company": "hLiberty · Remoto",
+      "period": "Mar 2022 — Jul 2026",
+      "summary": "Atuando no desenvolvimento, manutenção e evolução de sistemas web em produção, com forte foco em backend, infraestrutura e qualidade de código.",
+      "read_more": "Ler mais",
+      "details": {
+        "item1": "Responsável por pipelines de CI/CD, controle de versão e code reviews.",
+        "item2": "Manutenção e monitoramento de servidores Linux (Docker, Nginx).",
+        "item3": "Desenvolvimento de dashboards internos e integrações de sistemas.",
+        "item4": "Participação ativa em decisões técnicas e mentoria de desenvolvedores juniores.",
+        "item5": "Stack principal: Laravel, PHP, PostgreSQL, MySQL, Redis e Docker."
+      }
+    },
+    "ufpel": {
+      "job_role": "Desenvolvedor Web Full Stack Júnior",
+      "company": "UFPEL · Remoto",
+      "period": "Nov 2022 - Fev - 2023",
+      "summary": "Desenvolvimento de um protótipo web testável para criação e análise de mapas geoespaciais, permitindo a coleta de respostas dos usuários através de um grid interativo e a visualização dos resultados diretamente no mapa.",
+      "read_more": "Ler mais",
+      "details": {
+        "item1": "Implementação de mapas interativos e grids geoespaciais para coleta de respostas dos usuários.",
+        "item2": "Desenvolvimento de funcionalidades para criação e geração de mapas e análise dos dados coletados.",
+        "item3": "Implementação da sobreposição dos resultados dos usuários no mapa para facilitar a visualização e análise espacial.",
+        "item4": "Stack principal: React, Leaflet, Laravel e MySQL."
+      }
+    },
+    "furg": {
+      "job_role": "Desenvolvedor React Native Júnior",
+      "company": "FURG · Remoto",
+      "period": "Jan 2021 - Ago - 2022",
+      "summary": "Desenvolvimento de um jogo mobile voltado à educação e conscientização sobre a gestão participativa de recursos hídricos, utilizando uma experiência interativa para apresentar conceitos de tomada de decisão e gerenciamento de recursos.",
+      "read_more": "Ler mais",
+      "details": {
+        "item1": "Desenvolvimento de uma aplicação mobile utilizando React Native.",
+        "item2": "Implementação da experiência interativa do jogo, com foco na simulação da gestão participativa de recursos hídricos.",
+        "item3": "Desenvolvimento de interfaces e mecânicas voltadas à tomada de decisões pelos jogadores.",
+        "item4": "Colaboração com a equipe do projeto para transformar os requisitos educacionais em uma experiência de jogo.",
+        "item5": "Tecnologia principal: React Native.",
+        "item6": "Projeto disponível em: http://gprh.c3.furg.br"
+      }
     }
   },
   "projects": {
