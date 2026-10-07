@@ -8,8 +8,8 @@
   "hero": {
     "greeting": "Olá! Eu sou",
     "name": "Alan Santos",
-    "role": "Desenvolvedor de Software",
-    "description": "Sou especialista em construir e projetar experiências digitais excepcionais. Atualmente focado em criar arquiteturas de backend escaláveis e produtos centrados no usuário.",
+    "role": "Desenvolvedor de Software Pleno",
+    "description": "Desenvolvedor Full Stack com mais de 4 anos de experiência, apaixonado por criar aplicações web de ponta a ponta.   Atuo tanto no frontend com Vue.js quanto na estruturação de sistemas no backend (PHP/Laravel), além de gerenciar a infraestrutura com Docker, Linux e CI/CD.Como estudante de Engenharia de Computação (UFPEL), trago uma visão sólida de performance e arquitetura, garantindo que cada projeto seja eficiente e escalável do banco de dados à interface.",
     "cta": "Ver Projetos",
     "whatsapp": "Está procurando um profissional? Entre em contato pelo WhatsApp para discutirmos oportunidades."
   },

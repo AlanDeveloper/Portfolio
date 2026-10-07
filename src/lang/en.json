@@ -8,8 +8,8 @@
   "hero": {
     "greeting": "Hi there! I'm",
     "name": "Alan Santos",
-    "role": "Software Developer",
-    "description": "I specialize in building and designing exceptional digital experiences. Currently focused on creating scalable backend architectures and human-centered products.",
+    "role": "Mid-level Software Developer",
+    "description": "Full Stack Developer with over 4 years of experience, passionate about building end-to-end web applications.   I work on both frontend interfaces (Vue.js) and robust backend logic (PHP/Laravel), while managing infrastructure with Docker, Linux, and CI/CD.As a Computer Engineering student (UFPEL), I bring a strong focus on performance and architecture, ensuring every project is efficient and scalable from the database to the UI.",
     "cta": "View Projects",
     "whatsapp": "Looking for a professional? Contact me on WhatsApp to discuss opportunities."
   },
