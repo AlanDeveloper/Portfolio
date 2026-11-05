@@ -54,9 +54,5 @@ window.addEventListener("DOMContentLoaded", () => {
   const savedLang =
     localStorage.getItem("preferredLang") || browserLang || DEFAULT_LANG;
 
-  if (savedLang !== DEFAULT_LANG) {
-    switchLanguage(savedLang);
-  } else {
-    document.getElementById(`btn-${DEFAULT_LANG}`)?.classList.add("active");
-  }
+  switchLanguage(savedLang);
 });

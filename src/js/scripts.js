@@ -40,7 +40,14 @@ function renderProjects() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  renderProjects();
+  // Só renderiza os projetos se as traduções já estiverem carregadas.
+  // Caso contrário, o i18n.js chamará renderProjects() assim que o JSON
+  // do idioma for carregado, evitando que os cards fiquem sem descrição
+  // no primeiro acesso.
+  if (typeof currentTranslations !== "undefined" &&
+      Object.keys(currentTranslations).length > 0) {
+    renderProjects();
+  }
 
   AOS.init({
     duration: 1000,
