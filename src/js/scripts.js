@@ -72,4 +72,54 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // === Menu hambúrguer mobile ===
+  const menuBtn = document.getElementById("nav-menu-btn");
+  const navLinks = document.getElementById("nav-links");
+
+  if (menuBtn && navLinks) {
+    menuBtn.addEventListener("click", () => {
+      const isOpen = navLinks.classList.contains("open");
+      navLinks.classList.toggle("open");
+      menuBtn.classList.toggle("active");
+      menuBtn.setAttribute("aria-expanded", !isOpen);
+    });
+
+    // Fecha o menu ao clicar em um link
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuBtn.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  // === Navbar efeito de scroll ===
+  const navbar = document.querySelector(".navbar");
+  if (navbar) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+      } else {
+        navbar.classList.remove("scrolled");
+      }
+    });
+  }
+
+  // === Botão Voltar ao topo ===
+  const backToTopBtn = document.getElementById("back-to-top");
+  if (backToTopBtn) {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add("visible");
+      } else {
+        backToTopBtn.classList.remove("visible");
+      }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });

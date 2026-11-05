@@ -14,6 +14,9 @@
     padding: 1.5rem;
     transition: transform 0.3s ease;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -48,6 +51,7 @@
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .project-links a {
