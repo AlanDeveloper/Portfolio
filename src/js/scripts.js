@@ -77,21 +77,38 @@ document.addEventListener("DOMContentLoaded", () => {
   const menuBtn = document.getElementById("nav-menu-btn");
   const navLinks = document.getElementById("nav-links");
 
+  function toggleMenu(open) {
+    if (open) {
+      navLinks.classList.add("open");
+      menuBtn.classList.add("active");
+      menuBtn.setAttribute("aria-expanded", "true");
+      document.body.style.overflow = "hidden";
+    } else {
+      navLinks.classList.remove("open");
+      menuBtn.classList.remove("active");
+      menuBtn.setAttribute("aria-expanded", "false");
+      document.body.style.overflow = "";
+    }
+  }
+
   if (menuBtn && navLinks) {
     menuBtn.addEventListener("click", () => {
       const isOpen = navLinks.classList.contains("open");
-      navLinks.classList.toggle("open");
-      menuBtn.classList.toggle("active");
-      menuBtn.setAttribute("aria-expanded", !isOpen);
+      toggleMenu(!isOpen);
     });
 
     // Fecha o menu ao clicar em um link
     navLinks.querySelectorAll("a").forEach((link) => {
       link.addEventListener("click", () => {
-        navLinks.classList.remove("open");
-        menuBtn.classList.remove("active");
-        menuBtn.setAttribute("aria-expanded", "false");
+        toggleMenu(false);
       });
+    });
+
+    // Fecha o menu ao clicar fora
+    document.addEventListener("click", (e) => {
+      if (!menuBtn.contains(e.target) && !navLinks.contains(e.target)) {
+        toggleMenu(false);
+      }
     });
   }
 

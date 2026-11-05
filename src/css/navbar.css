@@ -27,7 +27,6 @@
     font-weight: 700;
     color: var(--color-text);
     text-decoration: none;
-    margin-right: auto;
 }
 
 .logo span {
@@ -83,6 +82,7 @@
     padding: 1.5rem 2rem;
     gap: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    z-index: 999;
 }
 
 .nav-links a {
@@ -131,6 +131,7 @@
 @media (max-width: 768px) {
     .nav-menu-btn {
         display: flex;
+        margin-left: auto;
     }
 
     .nav-links {
@@ -145,6 +146,7 @@
         padding: 1.5rem 2rem;
         gap: 1.5rem;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
+        z-index: 999;
     }
 
     .nav-links.open {
