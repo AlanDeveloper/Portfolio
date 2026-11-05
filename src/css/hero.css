@@ -7,10 +7,10 @@
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
     align-items: center;
-    text-align: center;
+    text-align: left;
 }
 
 .hero-contact a {
@@ -31,6 +31,7 @@
     font-weight: 500;
     margin-bottom: 1rem;
     display: block;
+    text-align: left;
 }
 
 .hero-text h1 {
@@ -39,13 +40,18 @@
     line-height: 1.2;
     margin-bottom: 1rem;
     color: var(--color-text);
+    background: linear-gradient(135deg, var(--color-text) 0%, #a78bfa 50%, var(--color-primary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .hero-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    max-width: 560px;
 }
 
 .role {
@@ -57,14 +63,17 @@
 .description {
     font-size: 1.1rem;
     color: var(--color-text-secondary);
-    margin-bottom: 2rem;
-    max-width: 600px;
+    margin: 0 0 2rem;
+    max-width: 100%;
     line-height: 1.8;
+    text-align: left;
 }
 
 .cta-buttons {
     display: flex;
     gap: 1rem;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -87,11 +96,14 @@
 
 .hero-contact {
     margin-top: 14px;
+    text-align: left;
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 .hero-contact a {
     font-size: 0.85rem;
-    opacity: 0.7;
+    opacity: 0.8;
     text-decoration: underline;
 }
 
@@ -99,7 +111,84 @@
     opacity: 1;
 }
 
+/* ========================================
+   Hero Visual (elemento decorativo à direita)
+   ======================================== */
+
+.hero-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-card {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    backdrop-filter: blur(12px);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.hero-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+}
+
+.hero-card-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red { background: #ef4444; box-shadow: 0 0 8px rgba(239, 68, 68, 0.5); }
+.dot-yellow { background: #fbbf24; box-shadow: 0 0 8px rgba(251, 191, 36, 0.5); }
+.dot-green { background: #22c55e; box-shadow: 0 0 8px rgba(34, 197, 94, 0.5); }
+
+.hero-card-code {
+    font-family: "SF Mono", "Monaco", "Cascadia Code", "Consolas", monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+}
+
+.code-line {
+    margin: 0;
+}
+
+.code-line.indent {
+    padding-left: 1rem;
+}
+
+.keyword { color: #c084fc; font-weight: 600; }
+.name { color: #60a5fa; }
+.string { color: #34d399; }
+
+/* ========================================
+   Responsividade hero
+   ======================================== */
+
 @media (max-width: 968px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
     .hero-text h1 {
         font-size: 3rem;
     }
@@ -108,17 +197,33 @@
         font-size: 2rem;
     }
 
-    .description {
-        margin: 0 auto 2rem;
+    .hero-visual {
+        order: -1;
+    }
+
+    .hero-card {
+        max-width: 340px;
     }
 }
 
 @media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .role {
+        font-size: 1.75rem;
+    }
+
     .description {
-        margin: 0 auto 2rem;
+        margin: 0 0 2rem;
     }
 
     .cta-buttons {
-        justify-content: center;
+        justify-content: flex-start;
+    }
+
+    .hero-card {
+        max-width: 100%;
     }
 }
