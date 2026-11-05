@@ -1,0 +1,188 @@
+/* ========================================
+   Fundo fluido animado em toda a página
+   ======================================== */
+
+.fluid-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background-color: var(--color-bg);
+}
+
+.fluid-bg__blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.35;
+    animation: float infinite ease-in-out;
+}
+
+.fluid-bg__blob:nth-child(1) {
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #6366f1 0%, transparent 70%);
+    top: -10%;
+    left: -10%;
+    animation-name: float-1;
+    animation-duration: 12s;
+    animation-delay: 0s;
+}
+
+.fluid-bg__blob:nth-child(2) {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #a855f7 0%, transparent 70%);
+    bottom: -10%;
+    right: -10%;
+    animation-name: float-2;
+    animation-duration: 16s;
+    animation-delay: -2s;
+}
+
+.fluid-bg__blob:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, #06b6d4 0%, transparent 70%);
+    top: 40%;
+    left: 20%;
+    animation-name: float-3;
+    animation-duration: 20s;
+    animation-delay: -4s;
+}
+
+.fluid-bg__blob:nth-child(4) {
+    width: 450px;
+    height: 450px;
+    background: radial-gradient(circle, #f472b6 0%, transparent 70%);
+    bottom: 30%;
+    right: 30%;
+    animation-name: float-4;
+    animation-duration: 14s;
+    animation-delay: -1s;
+}
+
+/* Camada escura translúcida para manter legibilidade do texto */
+.fluid-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    z-index: 1;
+}
+
+/* ========================================
+   Animações de flutuamento orgânico
+   ======================================== */
+
+@keyframes float-1 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(40px, 60px) scale(1.1);
+    }
+    50% {
+        transform: translate(-20px, 30px) scale(0.9);
+    }
+    75% {
+        transform: translate(60px, -20px) scale(1.05);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes float-2 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    20% {
+        transform: translate(-50px, 40px) scale(1.05);
+    }
+    40% {
+        transform: translate(30px, -50px) scale(0.95);
+    }
+    60% {
+        transform: translate(-30px, 60px) scale(1.1);
+    }
+    80% {
+        transform: translate(50px, -30px) scale(0.9);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes float-3 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    30% {
+        transform: translate(20px, -40px) scale(1.05);
+    }
+    50% {
+        transform: translate(-60px, 20px) scale(0.9);
+    }
+    70% {
+        transform: translate(40px, 50px) scale(1.1);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+@keyframes float-4 {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    25% {
+        transform: translate(-40px, -60px) scale(0.95);
+    }
+    50% {
+        transform: translate(50px, 30px) scale(1.05);
+    }
+    75% {
+        transform: translate(-20px, -50px) scale(0.9);
+    }
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+}
+
+/* Reduz movimento em dispositivos que preferem menos animação */
+@media (prefers-reduced-motion: reduce) {
+    .fluid-bg__blob {
+        animation: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .fluid-bg__blob {
+        filter: blur(40px);
+        opacity: 0.25;
+    }
+
+    .fluid-bg__blob:nth-child(1) {
+        width: 300px;
+        height: 300px;
+    }
+
+    .fluid-bg__blob:nth-child(2) {
+        width: 250px;
+        height: 250px;
+    }
+
+    .fluid-bg__blob:nth-child(3) {
+        width: 200px;
+        height: 200px;
+    }
+
+    .fluid-bg__blob:nth-child(4) {
+        width: 280px;
+        height: 280px;
+    }
+}
