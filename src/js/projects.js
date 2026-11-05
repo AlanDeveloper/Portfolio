@@ -11,4 +11,10 @@ const projects = [
     github: "https://github.com/AlanDeveloper/kicks",
     live: "https://kicks.alandeveloper.com.br/",
   },
+  {
+    id: "anatox",
+    image: "src/assets/img/projects/anatox.png",
+    github: null,
+    live: "https://anatox.com.br",
+  },
 ];

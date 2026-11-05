@@ -73,6 +73,10 @@
     "kicks": {
       "title": "Kicks",
       "description": "Sneaker e-commerce store with shopping cart, state management with Pinia and responsive interface. Built with Vue 3, TypeScript and Tailwind CSS."
+    },
+    "anatox": {
+      "title": "Anato-X",
+      "description": "Educational system for UFPel's School of Dentistry, featuring content management, granular permissions, and an X-ray editor. Built with Vue 3, TypeScript, Tailwind CSS, Laravel, MySQL, and Redis, with AI assistance."
     }
   },
   "about": {

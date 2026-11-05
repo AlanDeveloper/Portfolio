@@ -73,6 +73,10 @@
     "kicks": {
       "title": "Kicks",
       "description": "Loja virtual de sneakers com carrinho de compras, gerenciamento de estado com Pinia e interface responsiva. Desenvolvido com Vue 3, TypeScript e Tailwind CSS."
+    },
+    "anatox": {
+      "title": "Anato-X",
+      "description": "Sistema educacional para a Faculdade de Odontologia da UFPel, com gerenciamento de conteúdo, permissões granulares e editor de radiografias. Desenvolvido com Vue 3, TypeScript, Tailwind CSS, Laravel, MySQL e Redis, com auxílio de IA."
     }
   },
   "about": {
