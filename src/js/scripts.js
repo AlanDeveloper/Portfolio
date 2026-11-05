@@ -33,7 +33,8 @@ function renderProjects() {
   });
 
   document.querySelectorAll(".project-card").forEach((card) => {
-    card.addEventListener("click", () => {
+    card.addEventListener("click", (e) => {
+      if (e.target.closest("a")) return;
       window.open(card.dataset.link, "_blank");
     });
   });
