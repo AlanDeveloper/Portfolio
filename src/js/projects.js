@@ -1,9 +1,9 @@
 const projects = [
   {
-    id: "portfolio",
-    image: "src/assets/img/projects/portfolio.jpg",
-    github: "https://github.com/AlanDeveloper/Portfolio",
-    live: "https://alandeveloper.com.br/",
+    id: "anatox",
+    image: "src/assets/img/projects/anatox.png",
+    github: null,
+    live: "https://anatox.com.br",
   },
   {
     id: "kicks",
@@ -12,9 +12,9 @@ const projects = [
     live: "https://kicks.alandeveloper.com.br/",
   },
   {
-    id: "anatox",
-    image: "src/assets/img/projects/anatox.png",
-    github: null,
-    live: "https://anatox.com.br",
+    id: "portfolio",
+    image: "src/assets/img/projects/portfolio.png",
+    github: "https://github.com/AlanDeveloper/Portfolio",
+    live: "https://alandeveloper.com.br/",
   },
 ];
